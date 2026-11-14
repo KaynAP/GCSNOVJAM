@@ -16,7 +16,7 @@ public class NPCTransformScript : MonoBehaviour
 
     void Update()
     {
-        if (CafeSceneStart._gameHasBegin)
+        if (GameManager._gameHasBegin)
         {
             if (_waypoints.Length == 0) return;
 

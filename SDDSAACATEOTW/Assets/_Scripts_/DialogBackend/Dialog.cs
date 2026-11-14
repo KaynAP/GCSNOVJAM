@@ -70,8 +70,9 @@ public class Dialog : MonoBehaviour
     public void OPTION1(){
         if(!_dialogSO._EndDialog)
         {
-            _BodyText.text = string.Empty;
+            
             _dialogSO = _dialogSO._option1;
+            NextLine();
         }
         else
         {
@@ -82,8 +83,9 @@ public class Dialog : MonoBehaviour
     public void OPTION2()
     {
         if(!_dialogSO._EndDialog){
-            _BodyText.text = string.Empty;
+            
             _dialogSO = _dialogSO._option2;
+            NextLine();
         }
         else
         {

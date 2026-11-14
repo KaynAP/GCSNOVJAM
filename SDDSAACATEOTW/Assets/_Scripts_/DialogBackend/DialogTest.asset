@@ -12,13 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb95acdc86b437649b22dbb531e31666, type: 3}
   m_Name: DialogTest
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
-  _StartDialog: 0
   _EndDialog: 0
-  _dialogText: 
-  _npcType: 0
-  _NpcSprite: 0
-  _PlayerSprite: 0
-  _option1TXT: 
-  _option2TXT: 
-  _option1: {fileID: 0}
-  _option2: {fileID: 0}
+  _dialogText: This is some test dialogue, Wow such a test here raaaaaaaahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+  _NpcSprite: 1
+  _option1TXT: Wow
+  _option2TXT: Wow
+  _option1: {fileID: 11400000, guid: c1cfab4c22770934c8257da4c67a0d1f, type: 2}
+  _option2: {fileID: 11400000, guid: c1cfab4c22770934c8257da4c67a0d1f, type: 2}
