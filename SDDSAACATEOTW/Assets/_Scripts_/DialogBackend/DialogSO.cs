@@ -1,14 +1,7 @@
 using UnityEngine;
 
 
-public enum npcType
-{
-    unknown,
-    cthulu,
-    celestial,
-    timeDaddy
 
-}
 public enum sprite
 {
     neutral,
@@ -32,14 +25,12 @@ public enum playerSprite
 [CreateAssetMenu(fileName = "Dialog", menuName = "Scriptable Objects/Dialog")]
 public class DialogSO : ScriptableObject
 {
-    public bool _StartDialog;
     public bool _EndDialog; 
 
-    [Space(5)]
+    [Space(10)]
     [TextArea(5,15)]
     public string _dialogText;
 
-    public npcType _npcType;
 
     public sprite _NpcSprite;
 

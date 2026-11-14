@@ -31,37 +31,31 @@ public class Dialog : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
-        _CharSprite.sprite = _Character._charImages[_dialogSO._NpcSprite];
+        //_CharSprite.sprite = _Character._charImages[_dialogSO._NpcSprite];
         _button1TXT.text = _dialogSO._option1TXT;
-        _button1TXT.text = _dialogSO._option1TXT;
+        _button2TXT.text = _dialogSO._option2TXT;
 
 
-
-        if (_dialogSO._EndDialog == false){
             if(Input.GetMouseButtonDown(0)|| Input.GetKeyDown(KeyCode.Space)){
-             if(_BodyText.text == _dialogSO._dialogText){
-                
-                NextLine();
-                }
-            
-            
-                else {
+                if(_BodyText.text != _dialogSO._dialogText){
                     StopAllCoroutines();
                     _BodyText.text = _dialogSO._dialogText;
                 }
     
             }
-        }
+        
     }
+    
     public void StartDialogue(){
         
-        PlayerControl.i_PC._CanMove = false;
+    //        PlayerControl.i_PC._CanMove = false;
 
         StartCoroutine(TypeLine());
         
-        _NameText.text = _Character._CharName;
+       //_NameText.text = _Character._CharName;
     }
     IEnumerator TypeLine(){
+
         foreach(char c in _dialogSO._dialogText.ToCharArray()){
             _BodyText.text += c;
             yield return new WaitForSeconds(_TextSpeed);
@@ -69,10 +63,9 @@ public class Dialog : MonoBehaviour
     }
     
     void NextLine(){
-        if(_dialogSO._EndDialog != false){
+       
             _BodyText.text = string.Empty;
             StartCoroutine(TypeLine());
-        }
     }
     public void OPTION1(){
         if(!_dialogSO._EndDialog)
