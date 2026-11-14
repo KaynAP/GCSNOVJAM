@@ -700,7 +700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 577d455a58b528a4696a71de8588805a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerControl
-  _moveSpeed: 5
+  _moveSpeed: 7
   CanMove: 0
 --- !u!1 &519420028
 GameObject:
