@@ -7,7 +7,7 @@ public class PlayerControl : MonoBehaviour
     public float _moveSpeed;
     Vector2 _moveDir;
 
-    public bool CanMove;
+    public bool _CanMove;
 
     public static PlayerControl i_PC;
 
