@@ -10,9 +10,12 @@ public class Dialog : MonoBehaviour
     public DialogSO _dialogSO; 
     public TextMeshProUGUI _BodyText;
     public TextMeshProUGUI _NameText;
-    public Image _CharImage;
+    public Image _CharSprite;
     public float _TextSpeed;
     public GameObject _TextCan;
+
+    [SerializeField] TMP_Text _button1TXT;
+    [SerializeField] TMP_Text _button2TXT;
 
 
 
@@ -27,7 +30,14 @@ public class Dialog : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {   if (_dialogSO._EndDialog == false){
+    {   
+        _CharSprite.sprite = _Character._charImages[_dialogSO._NpcSprite];
+        _button1TXT.text = _dialogSO._option1TXT;
+        _button1TXT.text = _dialogSO._option1TXT;
+
+
+
+        if (_dialogSO._EndDialog == false){
             if(Input.GetMouseButtonDown(0)|| Input.GetKeyDown(KeyCode.Space)){
              if(_BodyText.text == _dialogSO._dialogText){
                 
@@ -49,7 +59,7 @@ public class Dialog : MonoBehaviour
 
         StartCoroutine(TypeLine());
         
-        _NameText.text = name;
+        _NameText.text = _Character._CharName;
     }
     IEnumerator TypeLine(){
         foreach(char c in _dialogSO._dialogText.ToCharArray()){

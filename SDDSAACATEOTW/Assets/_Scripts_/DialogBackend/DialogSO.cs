@@ -42,7 +42,6 @@ public class DialogSO : ScriptableObject
     public npcType _npcType;
 
     public sprite _NpcSprite;
-    public playerSprite _PlayerSprite;
 
     public string _option1TXT;
     public string _option2TXT;
