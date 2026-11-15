@@ -28,6 +28,9 @@ public class PlayerControl : MonoBehaviour
     }
     void FixedUpdate()
     {
-        _rb.linearVelocity = _moveDir * _moveSpeed;
-    }
+        if (_CanMove)
+        {
+            _rb.linearVelocity = _moveDir * _moveSpeed;
+        }
+    }   
 }
