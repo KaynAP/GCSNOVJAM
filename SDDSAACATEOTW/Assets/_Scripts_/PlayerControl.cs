@@ -1,10 +1,11 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
     //annotated in powcow
-    Rigidbody2D _rb;
 
+    Rigidbody2D _rb;
     public float _moveSpeed;
     Vector2 _moveDir;
 
@@ -12,9 +13,9 @@ public class PlayerControl : MonoBehaviour
 
     public static PlayerControl i_PC;
 
-    public int _drink = 0;
-    public int _food = 0;
-    public int _dessert = 0;
+    public static int _drink = 0;
+    public static int _food = 0;
+    public static int _dessert = 0;
 
     void Awake()
     {
@@ -45,10 +46,25 @@ public class PlayerControl : MonoBehaviour
             _rb.linearVelocity = _moveDir * _moveSpeed;
         }
     }
-    private void OnTriggerStay2D(Collider2D other)
+    public void OnTriggerStay2D(Collider2D other)
     {
         if (Input.GetKey(KeyCode.E) && other.CompareTag("NPC"))
         {
+            if (other.name == "Cel")
+            {
+                GameManager._currentChar = other.GetComponent<CelManager>()._CelChar;
+                GameManager._currentDialog = other.GetComponent<CelManager>()._CelDialogStarts[CelManager._CelConvoNo];
+            }
+            else if (other.name == "Lulu")
+            {
+                GameManager._currentChar = other.GetComponent<LuluManager>()._LuluChar;
+                GameManager._currentDialog = other.GetComponent<LuluManager>()._LuluDialogStarts[LuluManager._LuluConvoNo];
+            }
+            else if (other.name == "Aevum")
+            {
+                GameManager._currentChar = other.GetComponent<TDManager>()._TDChar;
+                GameManager._currentDialog = other.GetComponent<TDManager>()._TDDialogStarts[TDManager._TDConvoNo];
+            }
             GameManager.i_GM.SCENECHANGE();
         }
     }

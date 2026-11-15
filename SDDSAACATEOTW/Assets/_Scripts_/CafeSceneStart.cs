@@ -24,9 +24,9 @@ public class CafeSceneStart : MonoBehaviour
     }
     IEnumerator TimeBeforeBegin()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         GameManager._gameHasBegin = true;
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(4.5f);
         GameManager._IntroDone = true;
     }
 }
