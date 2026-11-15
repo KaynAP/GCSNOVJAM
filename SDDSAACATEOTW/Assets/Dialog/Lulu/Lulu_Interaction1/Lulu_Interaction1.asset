@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb95acdc86b437649b22dbb531e31666, type: 3}
+  m_Name: Lulu_Interaction1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogSO
+  _EndDialog: 0
+  _dialogText: This is definitely a place... you called it a cafe?
+  _AddLove: 0
+  _NpcSprite: 0
+  _option1TXT: Small Talk
+  _option2TXT: Ask for Order
+  _option1: {fileID: 11400000, guid: 58a361118910741418023309ac4af43a, type: 2}
+  _option2: {fileID: 11400000, guid: 9432ed92dff6b6c47b3e16b3fa04f1cd, type: 2}
