@@ -33,10 +33,13 @@ public class PlayerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _moveDir = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        if (!_CanMove)
+        if (!GameManager._GamePause)
         {
-            _rb.linearVelocity = Vector2.zero;
+            _moveDir = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+            if (!_CanMove)
+            {
+                _rb.linearVelocity = Vector2.zero;
+            }
         }
     }
     void FixedUpdate()
@@ -48,7 +51,7 @@ public class PlayerControl : MonoBehaviour
     }
     public void OnTriggerStay2D(Collider2D other)
     {
-        if (Input.GetKey(KeyCode.E) && other.CompareTag("NPC"))
+        if (Input.GetKey(KeyCode.E) && other.CompareTag("NPC") && !GameManager._GamePause)
         {
             if (other.name == "Cel")
             {

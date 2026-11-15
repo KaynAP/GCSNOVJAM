@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 
     public static bool _gameHasBegin = false;
     public static bool _IntroDone = false;
+    public static bool _GamePause = false;
 
     //relationship meter
     public static int _CRelationshipMeter = 0;
@@ -16,6 +17,8 @@ public class GameManager : MonoBehaviour
     public static int _LRelationshipMeter = 0;
 
     public static int _phase = 0;
+
+    public GameObject _PauseMenu; 
 
     //pull the current character and dialog scriptable objects as well as 
     [HideInInspector] public static Characters _currentChar;
@@ -41,6 +44,7 @@ public class GameManager : MonoBehaviour
         //select the evil guy
         _gMChar[Random.Range(0,3)]._IsEvil = true;
         SceneManager.LoadScene("TitleScene");
+        _PauseMenu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -57,6 +61,25 @@ public class GameManager : MonoBehaviour
                 _phase = 2;
             }
         }
+        if (Input.GetKeyDown(KeyCode.Escape) && (SceneManager.GetActiveScene().name != "TitleScreen" || SceneManager.GetActiveScene().name != "EndScene"))
+        {
+            if (!_GamePause)
+            {
+                _GamePause = true;
+                _PauseMenu.SetActive(true);
+                Time.timeScale = 0f;
+                
+            }
+            else if (_GamePause)
+            {
+                _PauseMenu.SetActive(false);
+                _GamePause = false;
+                Time.timeScale = 1.0f;
+                
+            }
+            
+        }
+       
     }
 
 

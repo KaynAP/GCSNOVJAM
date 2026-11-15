@@ -7,6 +7,14 @@ public class optionsAndTitle : MonoBehaviour
 
     void Awake()
     {
+        if (i_oAT != null && i_oAT != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         i_oAT = this;
+        DontDestroyOnLoad(gameObject);
+
     }
 }
