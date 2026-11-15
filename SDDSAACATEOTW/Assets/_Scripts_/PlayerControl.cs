@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using System.Collections;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class PlayerControl : MonoBehaviour
     public bool _CanMove;
 
     public static PlayerControl i_PC;
+
+    public GameObject _Warning;
 
     public static int _drink = 0;
     public static int _food = 0;
@@ -28,17 +31,31 @@ public class PlayerControl : MonoBehaviour
         {
             i_PC.transform.position = GameManager._LASTPOS;
         }
+        _Warning.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        _moveDir = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        if (!_CanMove)
+        if (!GameManager._GamePause)
         {
-            _rb.linearVelocity = Vector2.zero;
+            _moveDir = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+            if (!_CanMove)
+            {
+                _rb.linearVelocity = Vector2.zero;
+            }
         }
     }
+
+    IEnumerator warningTime()
+    {
+        _Warning.SetActive(true);
+        _CanMove = false;
+        yield return new WaitForSeconds(2f);
+        _CanMove = true;
+        _Warning.SetActive(false);
+    }
+
     void FixedUpdate()
     {
         if (_CanMove)
@@ -48,24 +65,56 @@ public class PlayerControl : MonoBehaviour
     }
     public void OnTriggerStay2D(Collider2D other)
     {
-        if (Input.GetKey(KeyCode.E) && other.CompareTag("NPC"))
+        if (Input.GetKey(KeyCode.E) && other.CompareTag("NPC") && !GameManager._GamePause)
         {
-            if (other.name == "Cel")
+            
+            if (other.name == "Cel") //check Cel
             {
-                GameManager._currentChar = other.GetComponent<CelManager>()._CelChar;
-                GameManager._currentDialog = other.GetComponent<CelManager>()._CelDialogStarts[CelManager._CelConvoNo];
+                //if (CelManager._CelConvoNo >= 1 && GameManager._phase == 1) //Check if done phase 1
+                //{
+                //    warningTime();
+                //    Debug.Log(CelManager._CelConvoNo);
+                //}
+                //else
+                //{
+                    GameManager._currentChar = other.GetComponent<CelManager>()._CelChar;
+                    GameManager._currentDialog = other.GetComponent<CelManager>()._CelDialogStarts[CelManager._CelConvoNo];
+                    CelManager._CelConvoNo++;
+                    GameManager.i_GM.SCENECHANGE();
+                //}
+                    
             }
-            else if (other.name == "Lulu")
+            else if (other.name == "Lulu") //Check Lulu
             {
-                GameManager._currentChar = other.GetComponent<LuluManager>()._LuluChar;
-                GameManager._currentDialog = other.GetComponent<LuluManager>()._LuluDialogStarts[LuluManager._LuluConvoNo];
+                //if (LuluManager._LuluConvoNo >= 1 && GameManager._phase == 1) // check if done phase 1
+                //{
+                    
+                //    warningTime();
+                //}
+                //else
+                //{
+                    GameManager._currentChar = other.GetComponent<LuluManager>()._LuluChar;
+                    GameManager._currentDialog = other.GetComponent<LuluManager>()._LuluDialogStarts[LuluManager._LuluConvoNo];
+                    LuluManager._LuluConvoNo++;
+                    GameManager.i_GM.SCENECHANGE();
+                //}
+                    
             }
-            else if (other.name == "Aevum")
+            else if (other.name == "Aevum") //Check Aevum
             {
-                GameManager._currentChar = other.GetComponent<TDManager>()._TDChar;
-                GameManager._currentDialog = other.GetComponent<TDManager>()._TDDialogStarts[TDManager._TDConvoNo];
+                //if (TDManager._TDConvoNo >= 1 && GameManager._phase == 1) // check if done phase 1
+                //{
+                //    warningTime();
+                //}
+                //else
+                //{
+                    GameManager._currentChar = other.GetComponent<TDManager>()._TDChar;
+                    GameManager._currentDialog = other.GetComponent<TDManager>()._TDDialogStarts[TDManager._TDConvoNo];
+                    TDManager._TDConvoNo++;
+                    GameManager.i_GM.SCENECHANGE();
+                //}
             }
-            GameManager.i_GM.SCENECHANGE();
+            
         }
     }
 }

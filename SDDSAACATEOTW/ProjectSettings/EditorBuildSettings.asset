@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DatingScene.unity
     guid: 7ac3e02756f54ec46bcd64450a9c0bb9
+  - enabled: 1
+    path: Assets/Scenes/EndScene.unity
+    guid: 7fa6d25b5fb6bd04fb7127ff6e4414e7
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

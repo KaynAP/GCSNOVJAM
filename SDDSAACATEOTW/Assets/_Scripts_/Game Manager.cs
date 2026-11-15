@@ -1,3 +1,4 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,6 +10,8 @@ public class GameManager : MonoBehaviour
 
     public static bool _gameHasBegin = false;
     public static bool _IntroDone = false;
+    public static bool _GamePause = false;
+    public static bool _Success = false;
 
     //relationship meter
     public static int _CRelationshipMeter = 0;
@@ -16,6 +19,11 @@ public class GameManager : MonoBehaviour
     public static int _LRelationshipMeter = 0;
 
     public static int _phase = 0;
+
+    public GameObject _PauseMenu;
+
+    [HideInInspector] public static string _badGuy;
+
 
     //pull the current character and dialog scriptable objects as well as 
     [HideInInspector] public static Characters _currentChar;
@@ -41,6 +49,8 @@ public class GameManager : MonoBehaviour
         //select the evil guy
         _gMChar[Random.Range(0,3)]._IsEvil = true;
         SceneManager.LoadScene("TitleScene");
+        _PauseMenu.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -57,22 +67,78 @@ public class GameManager : MonoBehaviour
                 _phase = 2;
             }
         }
+        if (Input.GetKeyDown(KeyCode.Escape) && (SceneManager.GetActiveScene().name != "TitleScreen" || SceneManager.GetActiveScene().name != "EndScene"))
+        {
+            if (!_GamePause)
+            {
+                _GamePause = true;
+                _PauseMenu.SetActive(true);
+                Time.timeScale = 0f;
+                
+            }
+            else if (_GamePause)
+            {
+                _PauseMenu.SetActive(false);
+                _GamePause = false;
+                Time.timeScale = 1.0f;
+                
+            }
+            
+        }
+       
     }
 
 
     //change the scene, DM me because even I dont want to deal with explaining at midnight
     public void SCENECHANGE()
     {
-        if(SceneManager.GetActiveScene().name == "TitleScene")
+        if(SceneManager.GetActiveScene().name == "CafeScene" && (TDManager._TDConvoNo >= 3 || CelManager._CelConvoNo >= 3 || LuluManager._LuluConvoNo >= 3))
         {
-            SceneManager.LoadScene("CafeScene");
+            _phase = 3; //endgame, will put the ending decider
+            if (_CRelationshipMeter >= 4 && _gMChar[0]._IsEvil)
+            {
+                //good, C bad
+                _Success = true;
+                _badGuy = "Cel";
+            }
+            else if (_CRelationshipMeter < 4 && _gMChar[0]._IsEvil)
+            {
+                //bad, C bad
+                _Success = false;
+                _badGuy = "Cel";
+            }
+            else if (_TDRelationshipMeter >= 4 && _gMChar[1]._IsEvil)
+            {
+                //good, TD bad
+                _Success = true;
+                _badGuy = "Aevum";
+            }
+            else if (_TDRelationshipMeter < 4 && _gMChar[1]._IsEvil)
+            {
+                //bad, TD bad
+                _Success = false;
+                _badGuy = "Aevum";
+            }
+            else if (_LRelationshipMeter >= 4 && _gMChar[2]._IsEvil)
+            {
+                //good, L bad
+                _Success = true;
+                _badGuy = "Lulu";
+            }
+            else if (_LRelationshipMeter < 4 && _gMChar[2]._IsEvil)
+            {
+                //bad, L bad
+                _Success = false;
+                _badGuy = "Lulu";
+            }
+            SceneManager.LoadScene("EndScene");
         }
-        else if(SceneManager.GetActiveScene().name == "CafeScene"){
+        else if (SceneManager.GetActiveScene().name == "CafeScene"){
             if (PlayerControl.i_PC.isActiveAndEnabled)
             _LASTPOS = PlayerControl.i_PC.transform.position;
             SceneManager.LoadScene("DatingScene");
         }
-        else{
+        else {
             SceneManager.LoadScene("CafeScene");
         }
     }
