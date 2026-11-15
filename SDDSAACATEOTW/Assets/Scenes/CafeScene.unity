@@ -1051,7 +1051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerControl
   _moveSpeed: 3
   _CanMove: 0
-  _Warning: {fileID: 0}
+  _Warning: {fileID: 1918557698}
 --- !u!82 &321195411
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1149,6 +1149,109 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &339602538
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 339602542}
+  - component: {fileID: 339602541}
+  - component: {fileID: 339602540}
+  - component: {fileID: 339602539}
+  m_Layer: 0
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &339602539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339602538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GraphicRaycaster
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &339602540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339602538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 1
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &339602541
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339602538}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: -860707665
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &339602542
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339602538}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1918557699}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &354274382
 GameObject:
   m_ObjectHideFlags: 0
@@ -1943,9 +2046,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CelManager
   _CelChar: {fileID: 11400000, guid: bcfa106983f022748a6eafed3b6a3706, type: 2}
   _CelDialogStarts:
-  - {fileID: 11400000, guid: 8b7bec8bf4bc6994a8e8377bbdde46f4, type: 2}
-  - {fileID: 11400000, guid: 8b7bec8bf4bc6994a8e8377bbdde46f4, type: 2}
-  - {fileID: 11400000, guid: 8b7bec8bf4bc6994a8e8377bbdde46f4, type: 2}
+  - {fileID: 11400000, guid: 8251c0579f593734f8d087927870ff51, type: 2}
+  - {fileID: 11400000, guid: 8251c0579f593734f8d087927870ff51, type: 2}
+  - {fileID: 11400000, guid: 8251c0579f593734f8d087927870ff51, type: 2}
 --- !u!1 &777882052
 GameObject:
   m_ObjectHideFlags: 0
@@ -14007,9 +14110,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TDManager
   _TDChar: {fileID: 11400000, guid: b927a7d92507e07479f5819f6ed62203, type: 2}
   _TDDialogStarts:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 8251c0579f593734f8d087927870ff51, type: 2}
+  - {fileID: 11400000, guid: 8251c0579f593734f8d087927870ff51, type: 2}
+  - {fileID: 11400000, guid: 8251c0579f593734f8d087927870ff51, type: 2}
 --- !u!61 &1433218009
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16781,7 +16884,6 @@ RectTransform:
   m_Children:
   - {fileID: 1632970598}
   - {fileID: 2069423457}
-  - {fileID: 1918557699}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -17131,9 +17233,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LuluManager
   _LuluChar: {fileID: 11400000, guid: fc6b988d93f074c4bb1ea252f7821a5a, type: 2}
   _LuluDialogStarts:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 8251c0579f593734f8d087927870ff51, type: 2}
+  - {fileID: 11400000, guid: 8251c0579f593734f8d087927870ff51, type: 2}
+  - {fileID: 11400000, guid: 8251c0579f593734f8d087927870ff51, type: 2}
 --- !u!61 &1496022377
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18735,18 +18837,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1918557698}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1480291365}
-  m_Father: {fileID: 1469209186}
+  m_Father: {fileID: 339602542}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7, y: 0.00000016392}
-  m_SizeDelta: {x: 291.06, y: 355.77}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 300, y: 350}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1918557700
 MonoBehaviour:
@@ -19482,6 +19584,7 @@ SceneRoots:
   - {fileID: 454660320}
   - {fileID: 132770040}
   - {fileID: 651875029}
+  - {fileID: 339602542}
   - {fileID: 1469209186}
   - {fileID: 1713041306}
   - {fileID: 1985402767}

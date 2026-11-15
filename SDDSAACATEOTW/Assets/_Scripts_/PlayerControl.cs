@@ -47,11 +47,13 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
-    IEnumerator warningTime(int time)
+    IEnumerator warningTime()
     {
+        _Warning.SetActive(true);
         _CanMove = false;
-        yield return new WaitForSeconds(time);
+        yield return new WaitForSeconds(2f);
         _CanMove = true;
+        _Warning.SetActive(false);
     }
 
     void FixedUpdate()
@@ -65,52 +67,52 @@ public class PlayerControl : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.E) && other.CompareTag("NPC") && !GameManager._GamePause)
         {
+            
             if (other.name == "Cel") //check Cel
             {
-                if (CelManager._CelConvoNo >= 1 && GameManager._phase == 1) //Check if done phase 1
-                {
-                    _Warning.SetActive(true);
-                    warningTime(2);
-                }
-                else
-                {
+                //if (CelManager._CelConvoNo >= 1 && GameManager._phase == 1) //Check if done phase 1
+                //{
+                //    warningTime();
+                //    Debug.Log(CelManager._CelConvoNo);
+                //}
+                //else
+                //{
                     GameManager._currentChar = other.GetComponent<CelManager>()._CelChar;
                     GameManager._currentDialog = other.GetComponent<CelManager>()._CelDialogStarts[CelManager._CelConvoNo];
                     CelManager._CelConvoNo++;
                     GameManager.i_GM.SCENECHANGE();
-                }
+                //}
                     
             }
             else if (other.name == "Lulu") //Check Lulu
             {
-                if (LuluManager._LuluConvoNo >= 1 && GameManager._phase == 1) // check if done phase 1
-                {
-                    _Warning.SetActive(true);
-                    warningTime(2);
-                }
-                else
-                {
+                //if (LuluManager._LuluConvoNo >= 1 && GameManager._phase == 1) // check if done phase 1
+                //{
+                    
+                //    warningTime();
+                //}
+                //else
+                //{
                     GameManager._currentChar = other.GetComponent<LuluManager>()._LuluChar;
                     GameManager._currentDialog = other.GetComponent<LuluManager>()._LuluDialogStarts[LuluManager._LuluConvoNo];
                     LuluManager._LuluConvoNo++;
                     GameManager.i_GM.SCENECHANGE();
-                }
+                //}
                     
             }
             else if (other.name == "Aevum") //Check Aevum
             {
-                if (TDManager._TDConvoNo >= 1 && GameManager._phase == 1) // check if done phase 1
-                {
-                    _Warning.SetActive(true);
-                    warningTime(2);
-                }
-                else
-                {
+                //if (TDManager._TDConvoNo >= 1 && GameManager._phase == 1) // check if done phase 1
+                //{
+                //    warningTime();
+                //}
+                //else
+                //{
                     GameManager._currentChar = other.GetComponent<TDManager>()._TDChar;
                     GameManager._currentDialog = other.GetComponent<TDManager>()._TDDialogStarts[TDManager._TDConvoNo];
                     TDManager._TDConvoNo++;
                     GameManager.i_GM.SCENECHANGE();
-                }
+                //}
             }
             
         }

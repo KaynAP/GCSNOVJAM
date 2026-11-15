@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
     public GameObject _PauseMenu;
 
     [HideInInspector] public static string _badGuy;
-    
+
 
     //pull the current character and dialog scriptable objects as well as 
     [HideInInspector] public static Characters _currentChar;
@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
         _gMChar[Random.Range(0,3)]._IsEvil = true;
         SceneManager.LoadScene("TitleScene");
         _PauseMenu.SetActive(false);
-        
+
     }
 
     // Update is called once per frame
