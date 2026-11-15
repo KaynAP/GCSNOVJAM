@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb95acdc86b437649b22dbb531e31666, type: 3}
   m_Name: Cel_Talk1
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
-  _EndDialog: 1
+  _EndDialog: 0
   _dialogText: I am quite exhausted having performed such a large scale show before I found this place.
   _AddLove: 0
   _NpcSprite: 0
