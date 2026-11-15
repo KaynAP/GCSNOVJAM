@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb95acdc86b437649b22dbb531e31666, type: 3}
+  m_Name: Lulu_Talk2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogSO
+  _EndDialog: 0
+  _dialogText: I was experiencing the profundity of the wood grain on this table before you interrupted me.
+  _AddLove: -1
+  _NpcSprite: 0
+  _option1TXT: Apologize
+  _option2TXT: Defend Your Actions
+  _option1: {fileID: 11400000, guid: 36a9690803a1b80499b6d61221af4742, type: 2}
+  _option2: {fileID: 11400000, guid: 6bb9e0897b147b5428f2966a563008b6, type: 2}

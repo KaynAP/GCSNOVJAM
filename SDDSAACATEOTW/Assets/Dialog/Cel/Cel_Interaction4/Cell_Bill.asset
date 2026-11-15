@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb95acdc86b437649b22dbb531e31666, type: 3}
+  m_Name: Cell_Bill
+  m_EditorClassIdentifier: Assembly-CSharp::DialogSO
+  _EndDialog: 1
+  _dialogText: "\"Dear, don\u2019t you know it\u2019s rude to interrupt a genius when they\u2019re formulating schemes of universal proportions. I guess it\u2019s time to depart and see if others will appreciate my talents elsewhere.\""
+  _AddLove: -1
+  _NpcSprite: 0
+  _option1TXT: End Dialogue
+  _option2TXT: 
+  _option1: {fileID: 0}
+  _option2: {fileID: 0}

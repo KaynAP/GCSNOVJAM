@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb95acdc86b437649b22dbb531e31666, type: 3}
+  m_Name: Cel_Interaction1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogSO
+  _EndDialog: 0
+  _dialogText: '"What a tremendously cozy place this is."'
+  _AddLove: 0
+  _NpcSprite: 0
+  _option1TXT: Small Talk
+  _option2TXT: Ask For Order
+  _option1: {fileID: 11400000, guid: fd476d7e6bcc4e440a6a685dd02c4e3a, type: 2}
+  _option2: {fileID: 11400000, guid: 4df24e278c4dc0d4b9c18137d96a3562, type: 2}

@@ -938,7 +938,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 6675550360611263053, guid: 401d1434bb1109d46a10102b29e44ef0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -959,7 +959,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.87, y: -3.16, z: -2}
-  m_LocalScale: {x: 0.32, y: 0.64, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1002,13 +1002,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.3, y: 0.63}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.36, y: 0.62}
   m_EdgeRadius: 0
 --- !u!50 &321195409
 Rigidbody2D:
@@ -1051,7 +1051,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerControl
   _moveSpeed: 3
   _CanMove: 0
-  _Warning: {fileID: 1918557698}
 --- !u!82 &321195411
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1900,7 +1899,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2, z: 0}
-  m_LocalScale: {x: 0.32, y: 0.64, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 132770040}
@@ -1954,7 +1953,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 5319943548896660689, guid: 1ed29b54ef77fbd459f6d23b9cd22175, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2024,7 +2023,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.24, y: 0.63}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2046,9 +2045,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CelManager
   _CelChar: {fileID: 11400000, guid: bcfa106983f022748a6eafed3b6a3706, type: 2}
   _CelDialogStarts:
-  - {fileID: 11400000, guid: 8251c0579f593734f8d087927870ff51, type: 2}
-  - {fileID: 11400000, guid: 8251c0579f593734f8d087927870ff51, type: 2}
-  - {fileID: 11400000, guid: 8251c0579f593734f8d087927870ff51, type: 2}
+  - {fileID: 11400000, guid: 8b7bec8bf4bc6994a8e8377bbdde46f4, type: 2}
+  - {fileID: 11400000, guid: 7c67a099aa193244888ad514b3321012, type: 2}
+  - {fileID: 11400000, guid: 0dd040313549fb54eb32d8c316fcd163, type: 2}
+  - {fileID: 11400000, guid: 6a2908ce7b204d54b8ef4c8314fad8d7, type: 2}
 --- !u!1 &777882052
 GameObject:
   m_ObjectHideFlags: 0
@@ -14009,7 +14009,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2, z: 0}
-  m_LocalScale: {x: 0.32, y: 0.64, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 132770040}
@@ -14063,7 +14063,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 2627596289912462345, guid: 0b994353164fa854280cd9baba18582b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -14110,9 +14110,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TDManager
   _TDChar: {fileID: 11400000, guid: b927a7d92507e07479f5819f6ed62203, type: 2}
   _TDDialogStarts:
-  - {fileID: 11400000, guid: 8251c0579f593734f8d087927870ff51, type: 2}
-  - {fileID: 11400000, guid: 8251c0579f593734f8d087927870ff51, type: 2}
-  - {fileID: 11400000, guid: 8251c0579f593734f8d087927870ff51, type: 2}
+  - {fileID: 11400000, guid: 4a1984744214f2846a905ce128753394, type: 2}
+  - {fileID: 11400000, guid: 066e853d83248c04f90b4678654a0279, type: 2}
+  - {fileID: 11400000, guid: ed6c6461583106e44881789278b0c587, type: 2}
+  - {fileID: 11400000, guid: b3222637fe012494eadc4b964aa2d279, type: 2}
 --- !u!61 &1433218009
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14151,7 +14152,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.26, y: 0.63}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -14203,7 +14204,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eae7c35f5680b1a4283259d7fbdc4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  _PauseMenu: {fileID: 2069423456}
   _gMChar:
   - {fileID: 11400000, guid: bcfa106983f022748a6eafed3b6a3706, type: 2}
   - {fileID: 11400000, guid: b927a7d92507e07479f5819f6ed62203, type: 2}
@@ -17134,7 +17134,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2, z: 0}
-  m_LocalScale: {x: 0.32, y: 0.64, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 132770040}
@@ -17188,7 +17188,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -5771254447810463792, guid: f15775a72c0a1af43bbf721a745605da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -17233,9 +17233,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LuluManager
   _LuluChar: {fileID: 11400000, guid: fc6b988d93f074c4bb1ea252f7821a5a, type: 2}
   _LuluDialogStarts:
-  - {fileID: 11400000, guid: 8251c0579f593734f8d087927870ff51, type: 2}
-  - {fileID: 11400000, guid: 8251c0579f593734f8d087927870ff51, type: 2}
-  - {fileID: 11400000, guid: 8251c0579f593734f8d087927870ff51, type: 2}
+  - {fileID: 11400000, guid: 9a9cf789a9b10cb4588fadb419bff7f8, type: 2}
+  - {fileID: 11400000, guid: 41b8ebd0fdf5a434fa2290c7b2100578, type: 2}
+  - {fileID: 11400000, guid: f8a80dc4725f6cb45992139fbb16e112, type: 2}
+  - {fileID: 11400000, guid: 98ecc7396c50b4842b782736ad03b492, type: 2}
 --- !u!61 &1496022377
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17274,7 +17275,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.32, y: 0.63}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

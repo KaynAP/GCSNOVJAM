@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb95acdc86b437649b22dbb531e31666, type: 3}
+  m_Name: Cel_AFOrder
+  m_EditorClassIdentifier: Assembly-CSharp::DialogSO
+  _EndDialog: 0
+  _dialogText: '"I expected more of an exceptional greeting and hospitality compared to most mortal humans."'
+  _AddLove: -1
+  _NpcSprite: 0
+  _option1TXT: Apologize
+  _option2TXT: Defend your actions
+  _option1: {fileID: 11400000, guid: 1605939b990d2d348b37d70e78743709, type: 2}
+  _option2: {fileID: 11400000, guid: aa275b494ce3e9143a857ec8f2b25e1a, type: 2}

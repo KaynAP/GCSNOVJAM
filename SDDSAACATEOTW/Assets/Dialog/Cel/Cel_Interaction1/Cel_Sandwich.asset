@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb95acdc86b437649b22dbb531e31666, type: 3}
+  m_Name: Cel_Sandwich
+  m_EditorClassIdentifier: Assembly-CSharp::DialogSO
+  _EndDialog: 0
+  _dialogText: '"The worst performances are the ones that end too quickly"'
+  _AddLove: -1
+  _NpcSprite: 0
+  _option1TXT: Sweet Dessert
+  _option2TXT: Savoury Dessert
+  _option1: {fileID: 11400000, guid: b07c8e2632c260e4183e119d2de08d30, type: 2}
+  _option2: {fileID: 11400000, guid: 8ffc56957256a164f91e63f228de7af3, type: 2}
