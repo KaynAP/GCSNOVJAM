@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Cel_Interaction2
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 0
-  _dialogText: 
+  _dialogText: You are certainly quick at serving it seems
   _AddLove: 0
   _NpcSprite: 0
-  _option1TXT: 
-  _option2TXT: 
-  _option1: {fileID: 0}
-  _option2: {fileID: 0}
+  _option1TXT: Leave Cel Alone
+  _option2TXT: Small Talk
+  _option1: {fileID: 11400000, guid: 8761aa40c6a2a0948ae653f7d708aad4, type: 2}
+  _option2: {fileID: 11400000, guid: ce9e82bb36a40a243b5b98aee16bdcfa, type: 2}
