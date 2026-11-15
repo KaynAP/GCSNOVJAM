@@ -9,6 +9,7 @@ using System.Diagnostics;
 public class Dialog : MonoBehaviour
 {
 
+    //Canvas and text setup
     public DialogSO _dialogSO; 
     public TextMeshProUGUI _BodyText;
     public TextMeshProUGUI _NameText;
@@ -19,12 +20,16 @@ public class Dialog : MonoBehaviour
     [SerializeField] TMP_Text _button1TXT;
     [SerializeField] TMP_Text _button2TXT;
 
+    //singleton reference to pull this script's data from other scripts
     public static Dialog i_DIA;
 
-
+    // character Scriptable Object (grabbing the correct character)
     public Characters _Character;
 
+// audio
     private AudioSource _audioPlayer;
+
+    //Activate the singleton
     void Awake()
     {
         i_DIA = this;
@@ -33,23 +38,28 @@ public class Dialog : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {   
-        _BodyText.text = string.Empty;
-        StartDialogue();
+        //Firing audio
+
         _audioPlayer = gameObject.GetComponent<AudioSource>();
     }
+    
     void OnEnable()
     {
+        //Clear text and fire starting dialogue
         _audioPlayer.clip = _Character._charSound;
+        _BodyText.text = string.Empty;
+        StartDialogue();
     }
 
     // Update is called once per frame
     void Update()
     {   
+        //set all the sprites and dialogue options
         _CharSprite.sprite = _Character._charImages[_dialogSO._NpcSprite];
         _button1TXT.text = _dialogSO._option1TXT;
         _button2TXT.text = _dialogSO._option2TXT;
 
-
+            // autocomplete if you press button
             if(Input.GetMouseButtonDown(0)|| Input.GetKeyDown(KeyCode.Space)){
                 if(_BodyText.text != _dialogSO._dialogText){
                     StopAllCoroutines();
@@ -63,41 +73,44 @@ public class Dialog : MonoBehaviour
     
     public void StartDialogue(){
         
-    //        PlayerControl.i_PC._CanMove = false;
+    //  PlayerControl.i_PC._CanMove = false;
 
         StartCoroutine(TypeLine());
         
        _NameText.text = _Character._CharName;
     }
     IEnumerator TypeLine(){
-
+        //type the line character by character
         foreach(char c in _dialogSO._dialogText.ToCharArray()){
             _BodyText.text += c;
             yield return new WaitForSeconds(_TextSpeed);
         }
     }
     
-    
+    //Skip to the next one
     void NextLine(){
        
             _BodyText.text = string.Empty;
             StartCoroutine(TypeLine());
     }
+
+    //Functions called from the buttons
     public void OPTION1(){
         addRelationship(_dialogSO._AddLove);
         if(_dialogSO._EndDialog == false)
         {
-            
+            //moves on if not ended
             _dialogSO = _dialogSO._option1;
             NextLine();
         }
         else
         {
-             
+             //swaps scene back to the main one
              GameManager.i_GM.SCENECHANGE();
         }
 
     }
+    //same as option one
     public void OPTION2()
     {
         addRelationship(_dialogSO._AddLove);
@@ -112,7 +125,7 @@ public class Dialog : MonoBehaviour
         }
     }
    
-
+    //add relationship stores
     void addRelationship(int amountToAdd)
     {
         switch(_Character._currentCharID){

@@ -3,15 +3,17 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-
+    //starting shit (save last position, activate singleton, your game has begin one)
     public static Vector3 _LASTPOS; 
     public static GameManager i_GM;
     public static bool _gameHasBegin = false;
 
+    //relationship meter
     public static int _CRelationshipMeter = 0;
     public static int _TDRelationshipMeter = 0;
     public static int _LRelationshipMeter = 0;
 
+    //pull the current character and dialog scriptable objects as well as 
     [HideInInspector] public Characters _currentChar;
 
     [HideInInspector] public DialogSO _currentDialog;
@@ -21,11 +23,13 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
+        //call singleton, ensure that game manager isnt deleted
         i_GM = this;
         DontDestroyOnLoad(gameObject);
     }
     void Start()
     {
+        //select the evil guy
      _gMChar[Random.Range(0,3)]._IsEvil = true;
     }
 
@@ -34,6 +38,7 @@ public class GameManager : MonoBehaviour
     {
         
     }
+    //change the scene, DM me because even I dont want to deal with explaining at midnight
     public void SCENECHANGE()
     {
         if(SceneManager.GetActiveScene().name == "CafeScene"){

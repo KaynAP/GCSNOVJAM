@@ -3,7 +3,7 @@ using UnityEngine.TextCore.Text;
 
 public class CelManager : MonoBehaviour
 {
-
+    
     public Characters _CelChar;
     public DialogSO[] _CelDialogStarts;
     [HideInInspector] public static int _CelConvoNo = 0;
