@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb95acdc86b437649b22dbb531e31666, type: 3}
-  m_Name: Dialog
+  m_Name: Cel_Talk1
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
-  _EndDialog: 0
-  _dialogText: This is once again a test
+  _EndDialog: 1
+  _dialogText: I am quite exhausted having performed such a large scale show before I found this place.
   _AddLove: 0
   _NpcSprite: 0
-  _option1TXT: test one
-  _option2TXT: test two
-  _option1: {fileID: 0}
-  _option2: {fileID: 11400000, guid: 4df24e278c4dc0d4b9c18137d96a3562, type: 2}
+  _option1TXT: Ask For Order
+  _option2TXT: 
+  _option1: {fileID: 11400000, guid: 91cb406044f19d64bab0c63c3a07ac4e, type: 2}
+  _option2: {fileID: 0}

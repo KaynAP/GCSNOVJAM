@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb95acdc86b437649b22dbb531e31666, type: 3}
-  m_Name: CelTest1
+  m_Name: Cel_Buisiness1
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
-  _EndDialog: 1
-  _dialogText: Man I love this
+  _EndDialog: 0
+  _dialogText: '''Sigh'' alright then.'
   _AddLove: 0
   _NpcSprite: 0
-  _option1TXT: 
+  _option1TXT: Item 1
   _option2TXT: 
-  _option1: {fileID: 0}
+  _option1: {fileID: 11400000, guid: 91cb406044f19d64bab0c63c3a07ac4e, type: 2}
   _option2: {fileID: 0}
