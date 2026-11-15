@@ -33,7 +33,7 @@ public class Dialog : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
-        //_CharSprite.sprite = _Character._charImages[_dialogSO._NpcSprite];
+        _CharSprite.sprite = _Character._charImages[_dialogSO._NpcSprite];
         _button1TXT.text = _dialogSO._option1TXT;
         _button2TXT.text = _dialogSO._option2TXT;
 
@@ -45,6 +45,7 @@ public class Dialog : MonoBehaviour
                 }
     
             }
+            
         
     }
     
@@ -63,6 +64,7 @@ public class Dialog : MonoBehaviour
             yield return new WaitForSeconds(_TextSpeed);
         }
     }
+    
     
     void NextLine(){
        
