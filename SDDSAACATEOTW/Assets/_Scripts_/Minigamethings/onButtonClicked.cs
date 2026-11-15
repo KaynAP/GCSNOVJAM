@@ -12,12 +12,12 @@ public class onButtonClicked : MonoBehaviour
     public void foodOption()
     {
         Debug.Log("clicked");
-        if (button.name == "Option 1")
+        if (gameObject.name == "Option 1")
         {
             PlayerControl.i_PC._food = 1;
             Debug.Log("food 1");
         }
-        else if (button.name == "Option 2")
+        else if (gameObject.name == "Option 2")
         {
             PlayerControl.i_PC._food = 2;
             Debug.Log("food 2");
