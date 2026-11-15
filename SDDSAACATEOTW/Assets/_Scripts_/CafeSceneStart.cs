@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class CafeSceneStart : MonoBehaviour
 {
-
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,11 +15,18 @@ public class CafeSceneStart : MonoBehaviour
         }
 
     }
+    private void Update()
+    {
+        if (GameManager._IntroDone)
+        {
+            PlayerControl.i_PC._CanMove = true;
+        }
+    }
     IEnumerator TimeBeforeBegin()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         GameManager._gameHasBegin = true;
         yield return new WaitForSeconds(5f);
-        PlayerControl.i_PC._CanMove = true;
+        GameManager._IntroDone = true;
     }
 }

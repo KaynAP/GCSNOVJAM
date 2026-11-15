@@ -23,7 +23,10 @@ public class PlayerControl : MonoBehaviour
     void Start()
     {
         _rb = gameObject.GetComponent<Rigidbody2D>();
-
+        if (GameManager._gameHasBegin)
+        {
+            i_PC.transform.position = GameManager._LASTPOS;
+        }
     }
 
     // Update is called once per frame

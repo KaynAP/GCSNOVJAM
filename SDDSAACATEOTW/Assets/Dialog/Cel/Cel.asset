@@ -27,4 +27,4 @@ MonoBehaviour:
   _smallTalker: 1
   _serious: 0
   _charSound: {fileID: 8300000, guid: 99a73c3e404f30445ae53875c3ef12e6, type: 3}
-  _IsEvil: 1
+  _IsEvil: 0

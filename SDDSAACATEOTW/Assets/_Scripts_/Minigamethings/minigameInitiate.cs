@@ -23,15 +23,19 @@ public class minigameInitiate : MonoBehaviour
         canvasVisibility(false);
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    public void OnTriggerStay2D(Collider2D collision)
     {
-        if (Input.GetKey(KeyCode.E) && collision.CompareTag("Player"))
-        {
-            if (PlayerControl.i_PC._drink == 0)
+        // checks if you've taken all of characters' orders
+        if (GameManager._phase == 2)
+        { 
+            if (Input.GetKey(KeyCode.E) && collision.CompareTag("Player"))
             {
-                canvasVisibility(true);
-                PlayerControl.i_PC._CanMove = false;
-                choice("Pick a Drink", "Coffee", "Tea");
+                if (PlayerControl.i_PC._drink == 0)
+                {
+                    canvasVisibility(true);
+                    PlayerControl.i_PC._CanMove = false;
+                    choice("Pick a Drink", "Coffee", "Tea");
+                }
             }
         }
     }
