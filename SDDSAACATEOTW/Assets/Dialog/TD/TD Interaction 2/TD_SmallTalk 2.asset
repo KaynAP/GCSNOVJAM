@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb95acdc86b437649b22dbb531e31666, type: 3}
+  m_Name: TD_SmallTalk 2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogSO
+  _EndDialog: 0
+  _dialogText: '"Small talk is a peculiar habit. People spend precious moments discussing the weather when they could simply tell me what they want."'
+  _AddLove: 0
+  _NpcSprite: 0
+  _option1TXT: Stand on business
+  _option2TXT: Apologize
+  _option1: {fileID: 11400000, guid: 8831914f23a900f4482a10e1ba73cd68, type: 2}
+  _option2: {fileID: 11400000, guid: b45d2e7693e759e40a2fd2606cb06478, type: 2}
