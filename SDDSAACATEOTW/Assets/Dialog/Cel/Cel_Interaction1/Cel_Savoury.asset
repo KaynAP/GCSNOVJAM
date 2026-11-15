@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb95acdc86b437649b22dbb531e31666, type: 3}
-  m_Name: Cel_Item2
+  m_Name: Cel_Savoury
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
-  _EndDialog: 0
-  _dialogText: Something that reminds me of a galaxy would be pleasurable
+  _EndDialog: 1
+  _dialogText: 
   _AddLove: 0
   _NpcSprite: 0
-  _option1TXT: Item 3
+  _option1TXT: 
   _option2TXT: 
-  _option1: {fileID: 11400000, guid: 971660533b300be44a7299ab3c1c3f47, type: 2}
+  _option1: {fileID: 0}
   _option2: {fileID: 0}
