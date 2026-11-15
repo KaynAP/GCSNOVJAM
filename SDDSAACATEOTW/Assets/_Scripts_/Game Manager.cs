@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public static int _TDRelationshipMeter = 0;
     public static int _LRelationshipMeter = 0;
 
-    [SerializeField] Characters[] _gMChar;
+    //[SerializeField] Characters[] _gMChar;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        _gMChar[Random.Range(0,3)]._IsEvil = true;
+    //    _gMChar[Random.Range(0,3)]._IsEvil = true;
     }
 
     // Update is called once per frame
