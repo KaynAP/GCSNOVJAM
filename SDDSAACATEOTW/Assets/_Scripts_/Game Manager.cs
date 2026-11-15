@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour
         _gMChar[Random.Range(0,3)]._IsEvil = true;
         SceneManager.LoadScene("TitleScene");
         _PauseMenu.SetActive(false);
+        
     }
 
     // Update is called once per frame
@@ -86,16 +87,16 @@ public class GameManager : MonoBehaviour
     //change the scene, DM me because even I dont want to deal with explaining at midnight
     public void SCENECHANGE()
     {
-        if(SceneManager.GetActiveScene().name == "TitleScene")
+        if(SceneManager.GetActiveScene().name == "CafeScene" && (TDManager._TDConvoNo >= 2 || CelManager._CelConvoNo >= 2 || LuluManager._LuluConvoNo >= 2))
         {
-            SceneManager.LoadScene("CafeScene");
+            _phase = 3; //endgame, will put the ending decider
         }
-        else if(SceneManager.GetActiveScene().name == "CafeScene"){
+        else if (SceneManager.GetActiveScene().name == "CafeScene"){
             if (PlayerControl.i_PC.isActiveAndEnabled)
             _LASTPOS = PlayerControl.i_PC.transform.position;
             SceneManager.LoadScene("DatingScene");
         }
-        else{
+        else {
             SceneManager.LoadScene("CafeScene");
         }
     }
