@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 1
   _dialogText: Is this a test too?
-  _NpcSprite: 1
+  _AddLove: 0
+  _NpcSprite: 0
   _option1TXT: Insane
   _option2TXT: Wow
   _option1: {fileID: 0}

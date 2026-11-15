@@ -12,7 +12,9 @@ public class GameManager : MonoBehaviour
     public static int _TDRelationshipMeter = 0;
     public static int _LRelationshipMeter = 0;
 
-    //[SerializeField] Characters[] _gMChar;
+    [HideInInspector] public Characters _currentChar;
+
+    [HideInInspector] public DialogSO _currentDialog;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -35,9 +37,12 @@ public class GameManager : MonoBehaviour
         if(SceneManager.GetActiveScene().name == "CafeScene"){
             _LASTPOS = PlayerControl.i_PC.transform.position;
             SceneManager.LoadScene("DatingScene");
+            Dialog.i_DIA._Character = _currentChar;
+            Dialog.i_DIA._dialogSO = _currentDialog;
         }
         else{
             SceneManager.LoadScene("CafeScene");
+            
         }
     }
 }

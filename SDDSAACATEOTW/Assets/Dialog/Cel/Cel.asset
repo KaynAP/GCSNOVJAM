@@ -12,11 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1bfdf14b0bf35a4f9d9ff7152def321, type: 3}
   m_Name: Cel
   m_EditorClassIdentifier: Assembly-CSharp::Characters
-  _currentCharID: 0
-  _CharName: 
+  _currentCharID: 1
+  _CharName: Cel
   _default: 0
-  _charImages: []
-  _smallTalker: 0
+  _charImages:
+  - key: 0
+    value: {fileID: 8569826570238887735, guid: 31b411834ad413b4886ebf87a80c871a, type: 3}
+  - key: 1
+    value: {fileID: -1396896980314518790, guid: 54b08229b26fc064caaf47f220c7f649, type: 3}
+  _smallTalker: 1
   _serious: 0
   _charSound: {fileID: 0}
   _IsEvil: 0

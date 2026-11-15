@@ -19,9 +19,14 @@ public class Dialog : MonoBehaviour
     [SerializeField] TMP_Text _button1TXT;
     [SerializeField] TMP_Text _button2TXT;
 
+    public static Dialog i_DIA;
 
 
     public Characters _Character;
+    void Awake()
+    {
+        i_DIA = this;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -73,7 +78,7 @@ public class Dialog : MonoBehaviour
     }
     public void OPTION1(){
         addRelationship(_dialogSO._AddLove);
-        if(!_dialogSO._EndDialog)
+        if(_dialogSO._EndDialog == false)
         {
             
             _dialogSO = _dialogSO._option1;
@@ -89,7 +94,7 @@ public class Dialog : MonoBehaviour
     public void OPTION2()
     {
         addRelationship(_dialogSO._AddLove);
-        if(!_dialogSO._EndDialog){
+        if(_dialogSO._EndDialog == false){
             
             _dialogSO = _dialogSO._option2;
             NextLine();
