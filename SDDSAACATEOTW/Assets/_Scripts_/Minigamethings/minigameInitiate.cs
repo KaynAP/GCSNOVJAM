@@ -30,7 +30,7 @@ public class minigameInitiate : MonoBehaviour
         { 
             if (Input.GetKey(KeyCode.E) && collision.CompareTag("Player"))
             {
-                if (PlayerControl.i_PC._drink == 0)
+                if (PlayerControl._drink == 0)
                 {
                     canvasVisibility(true);
                     PlayerControl.i_PC._CanMove = false;

@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
@@ -12,9 +13,9 @@ public class PlayerControl : MonoBehaviour
 
     public static PlayerControl i_PC;
 
-    public int _drink = 0;
-    public int _food = 0;
-    public int _dessert = 0;
+    public static int _drink = 0;
+    public static int _food = 0;
+    public static int _dessert = 0;
 
     void Awake()
     {
@@ -45,10 +46,12 @@ public class PlayerControl : MonoBehaviour
             _rb.linearVelocity = _moveDir * _moveSpeed;
         }
     }
-    private void OnTriggerStay2D(Collider2D other)
+    public void OnTriggerStay2D(Collider2D other)
     {
         if (Input.GetKey(KeyCode.E) && other.CompareTag("NPC"))
         {
+            GameManager.i_GM._currentChar = other.GetComponent<Characters>();
+            GameManager.i_GM._currentDialog = other.GetComponent<DialogSO>();
             GameManager.i_GM.SCENECHANGE();
         }
     }
