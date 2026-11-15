@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
 
     [HideInInspector] public DialogSO _currentDialog;
 
+    [SerializeField] Characters[] _gMChar;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -24,7 +26,7 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-    //    _gMChar[Random.Range(0,3)]._IsEvil = true;
+     _gMChar[Random.Range(0,3)]._IsEvil = true;
     }
 
     // Update is called once per frame

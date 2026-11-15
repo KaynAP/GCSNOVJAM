@@ -16149,57 +16149,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1496022372}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68a1973051d1a9b45bcedf79f961ef38, type: 3}
+  m_Script: {fileID: 11500000, guid: 70737cc8fd21c4a4090063c7b06d5bce, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CelManager
-  _CelChar: {fileID: 0}
-  _CelDialogStarts: []
---- !u!61 &1496022377
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1496022372}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EditorClassIdentifier: Assembly-CSharp::LuluManager
+  _LuluChar: {fileID: 0}
+  _LuluDialogStarts: []
 --- !u!1 &1577663486
 GameObject:
   m_ObjectHideFlags: 0
@@ -17057,6 +17011,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   _currentChar: {fileID: 0}
   _currentDialog: {fileID: 0}
+  _gMChar:
+  - {fileID: 11400000, guid: bcfa106983f022748a6eafed3b6a3706, type: 2}
+  - {fileID: 11400000, guid: b927a7d92507e07479f5819f6ed62203, type: 2}
+  - {fileID: 11400000, guid: fc6b988d93f074c4bb1ea252f7821a5a, type: 2}
 --- !u!4 &1599850477
 Transform:
   m_ObjectHideFlags: 0
