@@ -22,10 +22,4 @@ public class CafeSceneStart : MonoBehaviour
         yield return new WaitForSeconds(5f);
         PlayerControl.i_PC._CanMove = true;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

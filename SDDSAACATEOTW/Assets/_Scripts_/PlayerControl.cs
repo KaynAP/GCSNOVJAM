@@ -11,6 +11,10 @@ public class PlayerControl : MonoBehaviour
 
     public static PlayerControl i_PC;
 
+    public int _drink = 0;
+    public int _food = 0;
+    public int _dessert = 0;
+
     void Awake()
     {
         i_PC = this;
@@ -25,6 +29,10 @@ public class PlayerControl : MonoBehaviour
     void Update()
     {
         _moveDir = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        if (!_CanMove)
+        {
+            _rb.linearVelocity = Vector2.zero;
+        }
     }
     void FixedUpdate()
     {
