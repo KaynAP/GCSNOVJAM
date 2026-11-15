@@ -17,8 +17,14 @@ MonoBehaviour:
   _default: 0
   _charImages:
   - key: 0
-    value: {fileID: 490946310422229766, guid: d98348235813ef242bafb8da02e7b5fb, type: 3}
+    value: {fileID: 2058408312082480230, guid: 75dd487e701959f49af2163577774fe9, type: 3}
+  - key: 3
+    value: {fileID: 7720833445524830150, guid: c33267d06a78b66469e90a8429adb3e4, type: 3}
+  - key: 2
+    value: {fileID: -1887622562334101909, guid: 24b85afc0c12e14468e226f4daf49bec, type: 3}
+  - key: 1
+    value: {fileID: 8036664217600985562, guid: f0519ddc135a56c489f78cb768e89963, type: 3}
   _smallTalker: 0
   _serious: 1
   _charSound: {fileID: 8300000, guid: b19b0b5fd3faedb4e8b35c50c42f247b, type: 3}
-  _IsEvil: 0
+  _IsEvil: 1
