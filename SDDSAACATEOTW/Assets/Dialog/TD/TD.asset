@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1bfdf14b0bf35a4f9d9ff7152def321, type: 3}
+  m_Name: TD
+  m_EditorClassIdentifier: Assembly-CSharp::Characters
+  _currentCharID: 2
+  _CharName: Aevum
+  _default: 0
+  _charImages:
+  - key: 0
+    value: {fileID: 490946310422229766, guid: d98348235813ef242bafb8da02e7b5fb, type: 3}
+  _smallTalker: 0
+  _serious: 1
+  _charSound: {fileID: 8300000, guid: b19b0b5fd3faedb4e8b35c50c42f247b, type: 3}
+  _IsEvil: 0
