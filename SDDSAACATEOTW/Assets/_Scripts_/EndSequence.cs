@@ -5,7 +5,6 @@ using UnityEngine.UIElements;
 public class EndSequence : MonoBehaviour
 {
     public GameObject _EndScreen;
-
     [SerializeField] Sprite[] _ActualSprite;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

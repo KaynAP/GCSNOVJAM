@@ -62,8 +62,8 @@ public class Dialog : MonoBehaviour
         _button1TXT.text = _dialogSO._option1TXT;
         _button2TXT.text = _dialogSO._option2TXT;
 
-        if (!GameManager._GamePause)
-        {
+        //if (!GameManager._GamePause)
+        //{
             // autocomplete if you press button
             if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
             {
@@ -74,7 +74,7 @@ public class Dialog : MonoBehaviour
                 }
 
             }
-        }
+        //}
         
     }
     
