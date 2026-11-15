@@ -12,7 +12,7 @@ public class Characters : ScriptableObject
     public bool _smallTalker;
     public bool _serious;
 
-    public AudioSource _charSound;
+    public AudioClip _charSound;
     public bool _IsEvil;
 
     

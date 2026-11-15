@@ -20,5 +20,5 @@ MonoBehaviour:
     value: {fileID: 6279373639230397339, guid: 048270d77d28dce4397f499d7569d4db, type: 3}
   _smallTalker: 0
   _serious: 0
-  _charSound: {fileID: 0}
+  _charSound: {fileID: 8300000, guid: baff9d9af9272354bbd512fb2010e257, type: 3}
   _IsEvil: 0

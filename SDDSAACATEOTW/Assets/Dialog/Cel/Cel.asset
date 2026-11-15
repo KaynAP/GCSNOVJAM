@@ -20,7 +20,11 @@ MonoBehaviour:
     value: {fileID: 8569826570238887735, guid: 31b411834ad413b4886ebf87a80c871a, type: 3}
   - key: 1
     value: {fileID: -1396896980314518790, guid: 54b08229b26fc064caaf47f220c7f649, type: 3}
+  - key: 3
+    value: {fileID: -1396896980314518790, guid: 54b08229b26fc064caaf47f220c7f649, type: 3}
+  - key: 2
+    value: {fileID: -1396896980314518790, guid: 54b08229b26fc064caaf47f220c7f649, type: 3}
   _smallTalker: 1
   _serious: 0
-  _charSound: {fileID: 0}
-  _IsEvil: 0
+  _charSound: {fileID: 8300000, guid: 99a73c3e404f30445ae53875c3ef12e6, type: 3}
+  _IsEvil: 1

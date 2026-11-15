@@ -23,6 +23,8 @@ public class Dialog : MonoBehaviour
 
 
     public Characters _Character;
+
+    private AudioSource _audioPlayer;
     void Awake()
     {
         i_DIA = this;
@@ -33,6 +35,11 @@ public class Dialog : MonoBehaviour
     {   
         _BodyText.text = string.Empty;
         StartDialogue();
+        _audioPlayer = gameObject.GetComponent<AudioSource>();
+    }
+    void OnEnable()
+    {
+        _audioPlayer.clip = _Character._charSound;
     }
 
     // Update is called once per frame
