@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9c55cc04fec6cd94db86b594220ce5ac
+guid: 2d074f77f7cb6ec4bbe618c08de69f27
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5550047218767017696
-    second: TimeDaddy Button_0
+      213: -1289423455666418941
+    second: Player_Left3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,13 +102,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TimeDaddy Button_0
+      name: Player_Left3_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 3
         y: 1
-        width: 511
-        height: 511
+        width: 24
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,8 +117,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0294fbeb5754af2b0800000000000000
-      internalID: -5550047218767017696
+      spriteID: 30b42ffd23c0b1ee0800000000000000
+      internalID: -1289423455666418941
       vertices: []
       indices: 
       edges: []
@@ -137,7 +137,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TimeDaddy Button_0: -5550047218767017696
+      Player_Left3_0: -1289423455666418941
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
