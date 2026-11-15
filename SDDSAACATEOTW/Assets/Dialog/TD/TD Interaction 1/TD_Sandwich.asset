@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb95acdc86b437649b22dbb531e31666, type: 3}
   m_Name: TD_Sandwich
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
-  _EndDialog: 1
+  _EndDialog: 0
   _dialogText: "\u201CYou better not give me anything mouldy\u2026 For someone especially such as myself, I can tell what has aged.\u201D"
   _AddLove: -1
   _NpcSprite: 0

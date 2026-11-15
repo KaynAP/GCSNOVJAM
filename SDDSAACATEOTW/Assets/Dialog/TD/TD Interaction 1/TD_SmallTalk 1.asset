@@ -17,6 +17,6 @@ MonoBehaviour:
   _AddLove: 0
   _NpcSprite: 0
   _option1TXT: Apology
-  _option2TXT: 
+  _option2TXT: 'Stand on Business '
   _option1: {fileID: 11400000, guid: cab292f2c1cb69d40b6286bf98c91d3f, type: 2}
   _option2: {fileID: 11400000, guid: 614086c5be5329243817eace18a6d743, type: 2}

@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogText: "\u201CYou better not give me anything mouldy\u2026 For someone especially such as myself, I can tell what has aged.\u201D"
   _AddLove: 0
   _NpcSprite: 0
-  _option1TXT: 
-  _option2TXT: 
+  _option1TXT: End Dialogue
+  _option2TXT: End Dialogue
   _option1: {fileID: 0}
   _option2: {fileID: 0}
