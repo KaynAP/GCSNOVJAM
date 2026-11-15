@@ -40,12 +40,15 @@ public class Dialog : MonoBehaviour
     {   
         //Firing audio
 
-        _audioPlayer = gameObject.GetComponent<AudioSource>();
+        
     }
     
     void OnEnable()
     {
         //Clear text and fire starting dialogue
+        _audioPlayer = gameObject.GetComponent<AudioSource>();
+        _Character = GameManager._currentChar;
+        _dialogSO = GameManager._currentDialog;
         _audioPlayer.clip = _Character._charSound;
         _BodyText.text = string.Empty;
         StartDialogue();

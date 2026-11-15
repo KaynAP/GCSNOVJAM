@@ -18,8 +18,8 @@ public class GameManager : MonoBehaviour
     public static int _phase = 0;
 
     //pull the current character and dialog scriptable objects as well as 
-    [HideInInspector] public Characters _currentChar;
-    [HideInInspector] public DialogSO _currentDialog;
+    [HideInInspector] public static Characters _currentChar;
+    [HideInInspector] public static DialogSO _currentDialog;
 
     [SerializeField] Characters[] _gMChar;
 
@@ -71,8 +71,6 @@ public class GameManager : MonoBehaviour
             if (PlayerControl.i_PC.isActiveAndEnabled)
             _LASTPOS = PlayerControl.i_PC.transform.position;
             SceneManager.LoadScene("DatingScene");
-            Dialog.i_DIA._Character = _currentChar;
-            Dialog.i_DIA._dialogSO = _currentDialog;
         }
         else{
             SceneManager.LoadScene("CafeScene");

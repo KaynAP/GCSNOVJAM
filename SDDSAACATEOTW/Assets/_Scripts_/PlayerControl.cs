@@ -4,8 +4,8 @@ using UnityEngine;
 public class PlayerControl : MonoBehaviour
 {
     //annotated in powcow
-    Rigidbody2D _rb;
 
+    Rigidbody2D _rb;
     public float _moveSpeed;
     Vector2 _moveDir;
 
@@ -50,8 +50,21 @@ public class PlayerControl : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.E) && other.CompareTag("NPC"))
         {
-            GameManager.i_GM._currentChar = other.GetComponent<Characters>();
-            GameManager.i_GM._currentDialog = other.GetComponent<DialogSO>();
+            if (other.name == "Cel")
+            {
+                GameManager._currentChar = other.GetComponent<CelManager>()._CelChar;
+                GameManager._currentDialog = other.GetComponent<CelManager>()._CelDialogStarts[CelManager._CelConvoNo];
+            }
+            else if (other.name == "Lulu")
+            {
+                GameManager._currentChar = other.GetComponent<LuluManager>()._LuluChar;
+                GameManager._currentDialog = other.GetComponent<LuluManager>()._LuluDialogStarts[LuluManager._LuluConvoNo];
+            }
+            else if (other.name == "Aevum")
+            {
+                GameManager._currentChar = other.GetComponent<TDManager>()._TDChar;
+                GameManager._currentDialog = other.GetComponent<TDManager>()._TDDialogStarts[TDManager._TDConvoNo];
+            }
             GameManager.i_GM.SCENECHANGE();
         }
     }
