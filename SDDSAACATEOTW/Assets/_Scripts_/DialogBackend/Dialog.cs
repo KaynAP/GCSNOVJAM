@@ -3,6 +3,8 @@ using TMPro;
 using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.Rendering;
+using System.Text.RegularExpressions;
+using System.Diagnostics;
 
 public class Dialog : MonoBehaviour
 {
@@ -52,7 +54,7 @@ public class Dialog : MonoBehaviour
 
         StartCoroutine(TypeLine());
         
-       //_NameText.text = _Character._CharName;
+       _NameText.text = _Character._CharName;
     }
     IEnumerator TypeLine(){
 
@@ -68,6 +70,7 @@ public class Dialog : MonoBehaviour
             StartCoroutine(TypeLine());
     }
     public void OPTION1(){
+        addRelationship(_dialogSO._AddLove);
         if(!_dialogSO._EndDialog)
         {
             
@@ -76,12 +79,14 @@ public class Dialog : MonoBehaviour
         }
         else
         {
-            //swap scenes
+             
+             GameManager.i_GM.SCENECHANGE();
         }
 
     }
     public void OPTION2()
     {
+        addRelationship(_dialogSO._AddLove);
         if(!_dialogSO._EndDialog){
             
             _dialogSO = _dialogSO._option2;
@@ -89,9 +94,45 @@ public class Dialog : MonoBehaviour
         }
         else
         {
-            // swap le scene
+            GameManager.i_GM.SCENECHANGE();
         }
     }
    
+
+    void addRelationship(int amountToAdd)
+    {
+        switch(_Character._currentCharID){
+            case 1: 
+                if(!_Character._IsEvil){
+                    GameManager._CRelationshipMeter += amountToAdd;
+                }
+                else
+                {
+                    GameManager._CRelationshipMeter -= amountToAdd;
+                }
+            break;
+
+            case 2: 
+                if(!_Character._IsEvil){
+                    GameManager._TDRelationshipMeter += amountToAdd;
+                }
+                else
+                {
+                    GameManager._TDRelationshipMeter -= amountToAdd;
+                }
+            break;
+
+            case 3: 
+                if(!_Character._IsEvil){
+                    GameManager._LRelationshipMeter += amountToAdd;
+                }
+                else
+                {
+                    GameManager._LRelationshipMeter -= amountToAdd;
+                }
+            break;
+
+        }
+    } 
 
 }
