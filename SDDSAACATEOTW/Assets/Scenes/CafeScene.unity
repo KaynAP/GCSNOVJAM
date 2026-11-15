@@ -699,7 +699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 577d455a58b528a4696a71de8588805a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerControl
-  _moveSpeed: 4
+  _moveSpeed: 3
   _CanMove: 0
   _drink: 0
   _food: 0
@@ -1529,7 +1529,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 879478910}
         m_TargetAssemblyTypeName: onButtonClicked, Assembly-CSharp
-        m_MethodName: foodOption
+        m_MethodName: thingsOptions
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17770,7 +17770,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1978417512}
         m_TargetAssemblyTypeName: onButtonClicked, Assembly-CSharp
-        m_MethodName: foodOption
+        m_MethodName: thingsOptions
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

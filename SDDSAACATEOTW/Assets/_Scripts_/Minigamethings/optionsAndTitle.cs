@@ -1,16 +1,12 @@
+using TMPro;
 using UnityEngine;
 
 public class optionsAndTitle : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public static optionsAndTitle i_oAT;
 
-    // Update is called once per frame
-    void Update()
+    void Awake()
     {
-        
+        i_oAT = this;
     }
 }

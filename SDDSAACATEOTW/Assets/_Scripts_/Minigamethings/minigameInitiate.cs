@@ -7,9 +7,16 @@ public class minigameInitiate : MonoBehaviour
 {
     public GameObject _canvasThing;
 
+    public static minigameInitiate i_MI;
+
     public TMP_Text firstTextTarget;
     public TMP_Text secondTextTarget;
     public TMP_Text thirdTextTarget;
+
+    void Awake()
+    {
+        i_MI = this;
+    }
 
     private void Start()
     {
@@ -20,16 +27,12 @@ public class minigameInitiate : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.E) && collision.CompareTag("Player"))
         {
-            canvasVisibility(true);
-            choice("Pick a Drink", "Coffee", "Tea");
-        }
-    }
-
-    public void Update()
-    {
-        while (_canvasThing.activeInHierarchy)
-        {
-            PlayerControl.i_PC._CanMove = false;
+            if (PlayerControl.i_PC._drink == 0)
+            {
+                canvasVisibility(true);
+                PlayerControl.i_PC._CanMove = false;
+                choice("Pick a Drink", "Coffee", "Tea");
+            }
         }
     }
     public void canvasVisibility(bool isVisible)
