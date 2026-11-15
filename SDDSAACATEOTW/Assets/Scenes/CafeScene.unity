@@ -1402,8 +1402,9 @@ MonoBehaviour:
   _CelChar: {fileID: 11400000, guid: bcfa106983f022748a6eafed3b6a3706, type: 2}
   _CelDialogStarts:
   - {fileID: 11400000, guid: 8b7bec8bf4bc6994a8e8377bbdde46f4, type: 2}
-  - {fileID: 11400000, guid: 8b7bec8bf4bc6994a8e8377bbdde46f4, type: 2}
-  - {fileID: 11400000, guid: 8b7bec8bf4bc6994a8e8377bbdde46f4, type: 2}
+  - {fileID: 11400000, guid: 7c67a099aa193244888ad514b3321012, type: 2}
+  - {fileID: 11400000, guid: 0dd040313549fb54eb32d8c316fcd163, type: 2}
+  - {fileID: 11400000, guid: 6a2908ce7b204d54b8ef4c8314fad8d7, type: 2}
 --- !u!1 &777882052
 GameObject:
   m_ObjectHideFlags: 0

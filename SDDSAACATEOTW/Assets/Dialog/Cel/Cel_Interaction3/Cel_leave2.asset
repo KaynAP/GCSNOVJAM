@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogText: Cel wraps up their story so you can get back to work
   _AddLove: 0
   _NpcSprite: 0
-  _option1TXT: 
+  _option1TXT: End Dialogue
   _option2TXT: 
   _option1: {fileID: 0}
   _option2: {fileID: 0}

@@ -18,5 +18,5 @@ MonoBehaviour:
   _NpcSprite: 0
   _option1TXT: Ask For Order
   _option2TXT: 
-  _option1: {fileID: 11400000, guid: 91cb406044f19d64bab0c63c3a07ac4e, type: 2}
+  _option1: {fileID: 11400000, guid: b2ded2b549d7fb24d8d6149b114bc069, type: 2}
   _option2: {fileID: 0}

@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogText: "\u201CYou are indeed correct, dear waiter. My greatest magic trick, one that will make the whole universe awestruck by its excellence\u2026 once it\u2019s perfected that is. Would you like to be my assistant for this spectacle?"
   _AddLove: 0
   _NpcSprite: 0
-  _option1TXT: 
+  _option1TXT: End Dialogue
   _option2TXT: 
   _option1: {fileID: 0}
   _option2: {fileID: 0}
