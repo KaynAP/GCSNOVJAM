@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 1
   _dialogText: Cel looks insulted that you just ignored them
-  _AddLove: 0
+  _AddLove: -1
   _NpcSprite: 0
   _option1TXT: End Dialogue
   _option2TXT: 

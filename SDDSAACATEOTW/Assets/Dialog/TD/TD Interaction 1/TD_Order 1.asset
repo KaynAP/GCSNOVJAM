@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogText: '"Bring me whatever beverage you believe suits a man who has watched centuries pass. I''m curious to see if your judgment is as reliable as your service."'
   _AddLove: 0
   _NpcSprite: 0
-  _option1TXT: Item 2
-  _option2TXT: 
+  _option1TXT: Coffee
+  _option2TXT: Tea
   _option1: {fileID: 11400000, guid: a74d445a5fe73ef4c9d33381550cdf59, type: 2}
-  _option2: {fileID: 0}
+  _option2: {fileID: 11400000, guid: 561da92fc8cc5e14baf154606a495a7d, type: 2}

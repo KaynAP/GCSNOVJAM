@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb95acdc86b437649b22dbb531e31666, type: 3}
-  m_Name: Lulu_Business
+  m_Name: Lulu_Interaction4
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 0
-  _dialogText: "\u201CHmm\u2026 How unusual."
+  _dialogText: "She\u2019s lost in thought again\u2026"
   _AddLove: 0
   _NpcSprite: 0
-  _option1TXT: 
-  _option2TXT: 
-  _option1: {fileID: 0}
-  _option2: {fileID: 0}
+  _option1TXT: Pry
+  _option2TXT: Offer Bill
+  _option1: {fileID: 11400000, guid: e0ae53a2fa3a8f0478e7bffaa801980c, type: 2}
+  _option2: {fileID: 11400000, guid: 9f817224fa1b880478c02b0b0bc6d4e8, type: 2}

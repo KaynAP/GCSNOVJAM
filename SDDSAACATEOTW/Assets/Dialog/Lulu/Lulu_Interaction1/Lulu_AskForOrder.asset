@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 0
   _dialogText: "I\u2019d say you have your pants in a twist, but I can see that\u2019s not true."
-  _AddLove: 0
+  _AddLove: -1
   _NpcSprite: 0
   _option1TXT: Apologize
   _option2TXT: 

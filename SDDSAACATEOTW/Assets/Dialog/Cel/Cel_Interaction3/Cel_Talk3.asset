@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 0
   _dialogText: You let Cel continue talking, knowing you might be here for some time
-  _AddLove: 0
+  _AddLove: 1
   _NpcSprite: 0
   _option1TXT: Leave
   _option2TXT: Continue Small Talk

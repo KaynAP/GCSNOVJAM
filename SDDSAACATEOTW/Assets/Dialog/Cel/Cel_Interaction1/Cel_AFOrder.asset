@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Cel_AFOrder
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 0
-  _dialogText: I expected more of an exceptional greeting and hospitality compared to most mortal humans.
-  _AddLove: 0
+  _dialogText: '"I expected more of an exceptional greeting and hospitality compared to most mortal humans."'
+  _AddLove: -1
   _NpcSprite: 0
   _option1TXT: Apologize
   _option2TXT: Defend your actions

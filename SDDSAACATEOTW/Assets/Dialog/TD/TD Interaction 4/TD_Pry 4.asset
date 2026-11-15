@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb95acdc86b437649b22dbb531e31666, type: 3}
   m_Name: TD_Pry 4
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
-  _EndDialog: 0
-  _dialogText: 
-  _AddLove: 0
+  _EndDialog: 1
+  _dialogText: '"A question asked too early rarely receives an answer worth hearing. Some things reveal themselves in due time. This is not one of those times."'
+  _AddLove: -1
   _NpcSprite: 0
-  _option1TXT: 
+  _option1TXT: End Dialogue
   _option2TXT: 
   _option1: {fileID: 0}
   _option2: {fileID: 0}

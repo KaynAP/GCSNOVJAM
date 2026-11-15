@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TD_Intercation 1
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 0
-  _dialogText: Hm... I guess I will experience this place for myself.
+  _dialogText: '"Hm... I guess I will experience this place for myself."'
   _AddLove: 0
   _NpcSprite: 0
   _option1TXT: Small Talk

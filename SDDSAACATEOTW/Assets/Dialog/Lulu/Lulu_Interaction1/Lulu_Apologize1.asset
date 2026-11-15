@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 0
   _dialogText: "Wow! That\u2019s really interesting!"
-  _AddLove: 0
+  _AddLove: 1
   _NpcSprite: 0
   _option1TXT: Take Order
   _option2TXT: 

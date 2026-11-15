@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Cel_Soup
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 0
-  _dialogText: The worst performances are the ones that end too quickly
-  _AddLove: 0
+  _dialogText: '"The worst performances are the ones that end too quickly"'
+  _AddLove: 1
   _NpcSprite: 0
   _option1TXT: Sweet Dessert
   _option2TXT: Savoury Dessert

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Cel_Sweet
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 1
-  _dialogText: 'Please take your time, I''d like to soak in this atmosphere just a bit. '
-  _AddLove: 0
+  _dialogText: '"Please take your time, I''d like to soak in this atmosphere just a bit." '
+  _AddLove: -1
   _NpcSprite: 0
   _option1TXT: End Dialogue
   _option2TXT: 

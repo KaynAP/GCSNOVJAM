@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb95acdc86b437649b22dbb531e31666, type: 3}
-  m_Name: Dialog 3
+  m_Name: Lulu_Pry
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
-  _EndDialog: 0
-  _dialogText: 
-  _AddLove: 0
+  _EndDialog: 1
+  _dialogText: '"You may not know this, but devouring worlds can be exhausting, dear. I was just thinking about how nice it is to have a little place like this."'
+  _AddLove: 1
   _NpcSprite: 0
-  _option1TXT: 
+  _option1TXT: End Dialogue
   _option2TXT: 
   _option1: {fileID: 0}
   _option2: {fileID: 0}

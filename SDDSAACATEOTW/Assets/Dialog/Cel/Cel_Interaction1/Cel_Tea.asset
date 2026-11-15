@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Cel_Tea
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 0
-  _dialogText: Something that reminds me of a galaxy would be pleasurable
-  _AddLove: 0
+  _dialogText: '"Something that reminds me of a galaxy would be pleasurable."'
+  _AddLove: 1
   _NpcSprite: 0
   _option1TXT: Soup
   _option2TXT: Sandwich

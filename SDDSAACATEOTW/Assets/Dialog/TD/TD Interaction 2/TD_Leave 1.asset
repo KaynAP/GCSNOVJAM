@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 1
   _dialogText: 'Aevum sits there peacefully lost in his own thoughts. '
-  _AddLove: 0
+  _AddLove: -1
   _NpcSprite: 0
-  _option1TXT: 
+  _option1TXT: End Dialogue
   _option2TXT: 
   _option1: {fileID: 0}
   _option2: {fileID: 0}

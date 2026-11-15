@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: TD_SmallTalk 3
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 0
-  _dialogText: '"'
-  _AddLove: 0
+  _dialogText: '"Waiter, did I not make myself clear the first time? Perhaps, maybe I should forward time ahead to when you finally understand what I have said."'
+  _AddLove: -1
   _NpcSprite: 0
-  _option1TXT: 
-  _option2TXT: 
-  _option1: {fileID: 0}
-  _option2: {fileID: 0}
+  _option1TXT: Apologize
+  _option2TXT: Defend Your Actions
+  _option1: {fileID: 11400000, guid: 980ec7115c0849e4a9a9893334bee695, type: 2}
+  _option2: {fileID: 11400000, guid: bd439f115a4a6bf41863f2fb67f8c001, type: 2}

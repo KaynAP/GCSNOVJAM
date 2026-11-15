@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb95acdc86b437649b22dbb531e31666, type: 3}
-  m_Name: Lulu_LeftAlone
+  m_Name: Lulu_Leave
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
-  _EndDialog: 0
-  _dialogText: 
+  _EndDialog: 1
+  _dialogText: She turns her attention back to her meal.
   _AddLove: 0
   _NpcSprite: 0
-  _option1TXT: 
+  _option1TXT: End Dialogue
   _option2TXT: 
   _option1: {fileID: 0}
   _option2: {fileID: 0}

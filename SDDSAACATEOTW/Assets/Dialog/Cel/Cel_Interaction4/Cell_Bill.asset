@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Cell_Bill
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 1
-  _dialogText: "Dear, don\u2019t you know it\u2019s rude to interrupt a genius when they\u2019re formulating schemes of universal proportions. I guess it\u2019s time to depart and see if others will appreciate my talents elsewhere."
-  _AddLove: 0
+  _dialogText: "\"Dear, don\u2019t you know it\u2019s rude to interrupt a genius when they\u2019re formulating schemes of universal proportions. I guess it\u2019s time to depart and see if others will appreciate my talents elsewhere.\""
+  _AddLove: -1
   _NpcSprite: 0
   _option1TXT: End Dialogue
   _option2TXT: 

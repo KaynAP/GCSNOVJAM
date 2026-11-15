@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 1
   _dialogText: What a curious way of obtaining food.
-  _AddLove: 0
+  _AddLove: 1
   _NpcSprite: 0
   _option1TXT: Finish Order
   _option2TXT: 

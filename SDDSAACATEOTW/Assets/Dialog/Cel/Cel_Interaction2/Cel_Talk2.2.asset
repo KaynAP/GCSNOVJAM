@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Cel_Talk2.2
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 1
-  _dialogText: Did you know that stars have the most brilliant dazzle when they explode?
-  _AddLove: 0
+  _dialogText: '"Did you know that stars have the most brilliant dazzle when they explode?"'
+  _AddLove: 1
   _NpcSprite: 0
   _option1TXT: End Dialogue
   _option2TXT: 

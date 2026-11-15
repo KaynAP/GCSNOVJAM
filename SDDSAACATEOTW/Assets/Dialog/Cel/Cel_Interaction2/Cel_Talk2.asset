@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Cel_Talk2
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 0
-  _dialogText: This cafe has a sense of inspiration flowing through it.
-  _AddLove: 0
+  _dialogText: '"This cafe has a sense of inspiration flowing through it."'
+  _AddLove: 1
   _NpcSprite: 0
   _option1TXT: Leave
   _option2TXT: More Small Talk
   _option1: {fileID: 11400000, guid: afdf8f13ac7ecc1419f8fbad12e76bc7, type: 2}
-  _option2: {fileID: 0}
+  _option2: {fileID: 11400000, guid: 079ddb19e0d053f4eaa41d84ec58c9d8, type: 2}

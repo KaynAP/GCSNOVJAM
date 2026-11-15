@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Cel_Interaction2
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 0
-  _dialogText: You are certainly quick at serving it seems
+  _dialogText: '"You are certainly quick at serving it seems."'
   _AddLove: 0
   _NpcSprite: 0
   _option1TXT: Leave Cel Alone

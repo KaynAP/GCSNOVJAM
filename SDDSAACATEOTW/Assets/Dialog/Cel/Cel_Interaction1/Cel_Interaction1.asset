@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Cel_Interaction1
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 0
-  _dialogText: What a tremendously cozy place this is.
+  _dialogText: '"What a tremendously cozy place this is."'
   _AddLove: 0
   _NpcSprite: 0
   _option1TXT: Small Talk

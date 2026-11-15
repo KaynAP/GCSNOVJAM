@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Cel_Talk3.2
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 1
-  _dialogText: You notice Cel's eyes sparkle with excitementseeing you so engaged with their story.
-  _AddLove: 0
+  _dialogText: You notice Cel's eyes sparkle with excitement seeing you so engaged with their story.
+  _AddLove: 1
   _NpcSprite: 0
   _option1TXT: End Dialogue
   _option2TXT: 

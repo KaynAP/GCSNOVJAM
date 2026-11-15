@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 0
   _dialogText: "What\u2019s a dessert?"
-  _AddLove: 0
+  _AddLove: 1
   _NpcSprite: 0
   _option1TXT: Sweet Dessert
   _option2TXT: Savoury Dessert

@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 0
   _dialogText: "You know, I just recently found out about pants. It\u2019s unfair how they only have 2 holes\u2026"
-  _AddLove: 0
+  _AddLove: 1
   _NpcSprite: 0
-  _option1TXT: Ask for order
+  _option1TXT: Take order
   _option2TXT: 
   _option1: {fileID: 11400000, guid: f260b8c093168aa45b182b9914fcec8b, type: 2}
   _option2: {fileID: 0}

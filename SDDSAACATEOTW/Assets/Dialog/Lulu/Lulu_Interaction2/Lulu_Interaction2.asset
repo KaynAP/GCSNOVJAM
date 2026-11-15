@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Lulu_Interaction2
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 0
-  _dialogText: 
+  _dialogText: Lulu looks zoned out.
   _AddLove: 0
   _NpcSprite: 0
-  _option1TXT: 
-  _option2TXT: 
-  _option1: {fileID: 0}
-  _option2: {fileID: 0}
+  _option1TXT: Hand food and leave
+  _option2TXT: Small Talk
+  _option1: {fileID: 11400000, guid: d2251b5267f36ce469b57ed80bfedc8e, type: 2}
+  _option2: {fileID: 11400000, guid: 4a71406d04dde7f42bf973158e147d9c, type: 2}

@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: TD_Bill 4
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 0
-  _dialogText: 
-  _AddLove: 0
+  _dialogText: '"Efficient. I appreciate that. Most people insist on filling silence with questions. You seem to understand when a moment has reached its conclusion."'
+  _AddLove: 1
   _NpcSprite: 0
-  _option1TXT: 
+  _option1TXT: End Dialogue
   _option2TXT: 
   _option1: {fileID: 0}
   _option2: {fileID: 0}

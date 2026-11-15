@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Cel_Apologize1
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 0
-  _dialogText: Perhaps my expectations were unreasonable. Though, in my defense, I AM a renowned galactic magician.
-  _AddLove: 0
+  _dialogText: '"Perhaps my expectations were unreasonable. Though, in my defense, I AM a renowned galactic magician."'
+  _AddLove: 1
   _NpcSprite: 0
   _option1TXT: Take Order
   _option2TXT: 

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Cel_Leave
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 1
-  _dialogText: Cel waves as you leave their table
+  _dialogText: Cel waves as you leave their table.
   _AddLove: 0
   _NpcSprite: 0
   _option1TXT: End Dialogue

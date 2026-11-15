@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 0
   _dialogText: "The void doesn\u2019t really have anything filling. Do you have anything like that?"
-  _AddLove: 0
+  _AddLove: -1
   _NpcSprite: 0
   _option1TXT: Soup
   _option2TXT: Sandwich

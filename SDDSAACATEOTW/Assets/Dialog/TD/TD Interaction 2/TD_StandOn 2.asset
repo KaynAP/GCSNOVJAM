@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb95acdc86b437649b22dbb531e31666, type: 3}
   m_Name: TD_StandOn 2
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
-  _EndDialog: 0
+  _EndDialog: 1
   _dialogText: '"Good. A person who values efficiency. Time is far too precious to waste pretending we don''t both know why we''re here."'
   _AddLove: 0
   _NpcSprite: 0
-  _option1TXT: 'Leave '
+  _option1TXT: 'End Dialogue '
   _option2TXT: 
   _option1: {fileID: 0}
   _option2: {fileID: 0}

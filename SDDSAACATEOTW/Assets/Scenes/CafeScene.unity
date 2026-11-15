@@ -13320,9 +13320,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TDManager
   _TDChar: {fileID: 11400000, guid: b927a7d92507e07479f5819f6ed62203, type: 2}
   _TDDialogStarts:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 4a1984744214f2846a905ce128753394, type: 2}
+  - {fileID: 11400000, guid: 066e853d83248c04f90b4678654a0279, type: 2}
+  - {fileID: 11400000, guid: ed6c6461583106e44881789278b0c587, type: 2}
+  - {fileID: 11400000, guid: b3222637fe012494eadc4b964aa2d279, type: 2}
 --- !u!61 &1433218009
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16340,9 +16341,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LuluManager
   _LuluChar: {fileID: 11400000, guid: fc6b988d93f074c4bb1ea252f7821a5a, type: 2}
   _LuluDialogStarts:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 9a9cf789a9b10cb4588fadb419bff7f8, type: 2}
+  - {fileID: 11400000, guid: 41b8ebd0fdf5a434fa2290c7b2100578, type: 2}
+  - {fileID: 11400000, guid: f8a80dc4725f6cb45992139fbb16e112, type: 2}
+  - {fileID: 11400000, guid: 98ecc7396c50b4842b782736ad03b492, type: 2}
 --- !u!61 &1496022377
 BoxCollider2D:
   m_ObjectHideFlags: 0

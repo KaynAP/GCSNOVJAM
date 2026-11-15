@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb95acdc86b437649b22dbb531e31666, type: 3}
-  m_Name: Dialog 4
+  m_Name: Lulu_Apologize2
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
-  _EndDialog: 0
-  _dialogText: 
-  _AddLove: 0
+  _EndDialog: 1
+  _dialogText: "Oh, there\u2019s never a need to apologize. Well, maybe sometimes. I\u2019m still not sure if I need to apologize for\u2026 enlightening\u2026 that group in the next galaxy over. They asked for it!"
+  _AddLove: 1
   _NpcSprite: 0
-  _option1TXT: 
+  _option1TXT: End Dialogue
   _option2TXT: 
   _option1: {fileID: 0}
   _option2: {fileID: 0}

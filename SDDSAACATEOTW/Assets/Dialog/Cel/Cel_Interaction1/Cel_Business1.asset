@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Cel_Business1
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 0
-  _dialogText: '''Sigh'' alright then.'
-  _AddLove: 0
+  _dialogText: '''Sigh'' "alright then."'
+  _AddLove: -1
   _NpcSprite: 0
   _option1TXT: Take Order
   _option2TXT: 

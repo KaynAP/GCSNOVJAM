@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Cel_Interaction3
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 0
-  _dialogText: "Cel starts talking about a previous \u2018show\u2019 they had done in another galaxy"
+  _dialogText: "Cel immedietly starts talking about a previous \u2018show\u2019 they had done in another galaxy"
   _AddLove: 0
   _NpcSprite: 0
   _option1TXT: Leave Cel Alone
