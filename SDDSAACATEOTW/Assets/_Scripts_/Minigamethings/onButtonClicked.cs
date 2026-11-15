@@ -1,30 +1,19 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class onButtonClicked : MonoBehaviour
 {
-    public Button button;
-    public void Start()
-    {
-        button.onClick.AddListener(foodOption);
-    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void foodOption()
     {
-        Debug.Log("clicked");
         if (gameObject.name == "Option 1")
         {
             PlayerControl.i_PC._food = 1;
-            Debug.Log("food 1");
+            gameObject.SetActive(false);
         }
         else if (gameObject.name == "Option 2")
         {
             PlayerControl.i_PC._food = 2;
-            Debug.Log("food 2");
+            gameObject.SetActive(false);
         }
-    }
-    private void OnDestroy()
-    {
-        button.onClick.RemoveListener(foodOption);
     }
 }

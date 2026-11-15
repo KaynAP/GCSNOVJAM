@@ -40,5 +40,12 @@ public class PlayerControl : MonoBehaviour
         {
             _rb.linearVelocity = _moveDir * _moveSpeed;
         }
-    }   
+    }
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (Input.GetKey(KeyCode.E) && other.CompareTag("NPC"))
+        {
+            GameManager.i_GM.SCENECHANGE();
+        }
+    }
 }

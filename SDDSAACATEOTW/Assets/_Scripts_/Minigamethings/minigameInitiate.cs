@@ -18,11 +18,18 @@ public class minigameInitiate : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (Input.GetKeyDown(KeyCode.E) && collision.CompareTag("Player"))
+        if (Input.GetKey(KeyCode.E) && collision.CompareTag("Player"))
         {
-            PlayerControl.i_PC._CanMove = false;
             canvasVisibility(true);
             choice("Pick a Drink", "Coffee", "Tea");
+        }
+    }
+
+    public void Update()
+    {
+        while (_canvasThing.activeInHierarchy)
+        {
+            PlayerControl.i_PC._CanMove = false;
         }
     }
     public void canvasVisibility(bool isVisible)
