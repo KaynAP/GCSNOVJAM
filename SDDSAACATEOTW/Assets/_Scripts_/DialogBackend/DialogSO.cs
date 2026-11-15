@@ -6,22 +6,11 @@ public enum sprite
 {
     neutral,
     happy,
-    crazy,
     sad,
-    flirtatious,
-    timid,
-    warm
+    angry
 
 }
-public enum playerSprite
-{
-    neutral,
-    happy,
-    sad,
-    flirtatious,
-    timid,
-    warm
-}
+
 [CreateAssetMenu(fileName = "Dialog", menuName = "Scriptable Objects/Dialog")]
 public class DialogSO : ScriptableObject
 {
@@ -30,7 +19,7 @@ public class DialogSO : ScriptableObject
     [Space(10)]
     [TextArea(5,15)]
     public string _dialogText;
-
+    public int _AddLove;
 
     public sprite _NpcSprite;
 
