@@ -17,6 +17,6 @@ MonoBehaviour:
   _AddLove: -1
   _NpcSprite: 0
   _option1TXT: End Dialogue
-  _option2TXT: 
+  _option2TXT: End Dialogue
   _option1: {fileID: 0}
   _option2: {fileID: 0}

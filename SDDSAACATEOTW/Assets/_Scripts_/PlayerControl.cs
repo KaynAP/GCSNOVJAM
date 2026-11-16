@@ -34,14 +34,14 @@ public class PlayerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!GameManager._GamePause)
-        {
+        //if (!GameManager._GamePause)
+        //{
             _moveDir = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
             if (!_CanMove)
             {
                 _rb.linearVelocity = Vector2.zero;
             }
-        }
+        //}
     }
 
     IEnumerator warningTime()
@@ -60,18 +60,19 @@ public class PlayerControl : MonoBehaviour
     }
     public void OnTriggerStay2D(Collider2D other)
     {
-        if (Input.GetKey(KeyCode.E) && other.CompareTag("NPC") && !GameManager._GamePause)
+        if (Input.GetKey(KeyCode.E) && other.CompareTag("NPC"))// && !GameManager._GamePause)
         {
             
             if (other.name == "Cel") //check Cel
             {
-                if (CelManager._CelConvoNo >= 1 && GameManager._phase == 1) //Check if done phase 1
-                {
-                    warningTime();
-                    Debug.Log(CelManager._CelConvoNo);
-                }
-                else
-                {
+                //if (CelManager._CelConvoNo >= 1 && GameManager._phase == 1) //Check if done phase 1
+                //{
+                //    warningTime();
+                //    Debug.Log(CelManager._CelConvoNo);
+                //}
+                //else
+                //{
+                Debug.Log(CelManager._CelConvoNo);
                     GameManager._currentChar = other.GetComponent<CelManager>()._CelChar;
                     GameManager._currentDialog = other.GetComponent<CelManager>()._CelDialogStarts[CelManager._CelConvoNo];
                     CelManager._CelConvoNo++;

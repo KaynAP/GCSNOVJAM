@@ -17,14 +17,14 @@ MonoBehaviour:
   _default: 0
   _charImages:
   - key: 0
-    value: {fileID: 8569826570238887735, guid: 31b411834ad413b4886ebf87a80c871a, type: 3}
+    value: {fileID: -5570603653943483951, guid: 6a5bce9f34a0021499bf5f97c1827060, type: 3}
   - key: 1
-    value: {fileID: -1396896980314518790, guid: 54b08229b26fc064caaf47f220c7f649, type: 3}
+    value: {fileID: 9173450142362172796, guid: eff589c85dc3658448d9810b0e8a2f93, type: 3}
   - key: 3
-    value: {fileID: -1396896980314518790, guid: 54b08229b26fc064caaf47f220c7f649, type: 3}
+    value: {fileID: 129079764919757178, guid: 36824565fda12b240904cd0169a5640f, type: 3}
   - key: 2
-    value: {fileID: -1396896980314518790, guid: 54b08229b26fc064caaf47f220c7f649, type: 3}
+    value: {fileID: 63202056909021508, guid: 75c30ec8969f8bc4dbf267dea3b233b0, type: 3}
   _smallTalker: 1
   _serious: 0
   _charSound: {fileID: 8300000, guid: 99a73c3e404f30445ae53875c3ef12e6, type: 3}
-  _IsEvil: 0
+  _IsEvil: 1

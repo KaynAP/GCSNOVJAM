@@ -17,6 +17,6 @@ MonoBehaviour:
   _AddLove: -1
   _NpcSprite: 0
   _option1TXT: Take Order
-  _option2TXT: 
+  _option2TXT: Take Order
   _option1: {fileID: 11400000, guid: f260b8c093168aa45b182b9914fcec8b, type: 2}
-  _option2: {fileID: 0}
+  _option2: {fileID: 11400000, guid: f260b8c093168aa45b182b9914fcec8b, type: 2}

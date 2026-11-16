@@ -17,6 +17,6 @@ MonoBehaviour:
   _AddLove: -1
   _NpcSprite: 0
   _option1TXT: Leave Aevum alone
-  _option2TXT: 
+  _option2TXT: Leave Aevum alone
   _option1: {fileID: 11400000, guid: 9fc120ef47e417e4fb00152704a3351f, type: 2}
-  _option2: {fileID: 0}
+  _option2: {fileID: 11400000, guid: 9fc120ef47e417e4fb00152704a3351f, type: 2}

@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
 
     public static bool _gameHasBegin = false;
     public static bool _IntroDone = false;
-    public static bool _GamePause = false;
+    //public static bool _GamePause = false;
     public static bool _Success = false;
 
     //relationship meter
@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
 
     public static int _phase = 0;
 
-    public GameObject _PauseMenu;
+    //public GameObject _PauseMenu;
 
     [HideInInspector] public static string _badGuy;
 
