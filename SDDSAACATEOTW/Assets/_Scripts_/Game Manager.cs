@@ -44,12 +44,16 @@ public class GameManager : MonoBehaviour
         i_GM = this;
         DontDestroyOnLoad(gameObject);
     }
+
     void Start()
     {
         //select the evil guy
-        _gMChar[Random.Range(0,3)]._IsEvil = true;
+        _gMChar[Random.Range(0, 3)]._IsEvil = true;
+
+        _LASTPOS = new Vector3(2.87f, -3.16f, -2f);
         SceneManager.LoadScene("TitleScene");
         _PauseMenu.SetActive(false);
+        Debug.Log($"{_gMChar[0]._IsEvil}, {_gMChar[1]._IsEvil}, {_gMChar[2]._IsEvil}");
 
     }
 
@@ -67,7 +71,7 @@ public class GameManager : MonoBehaviour
                 _phase = 2;
             }
         }
-        if (Input.GetKeyDown(KeyCode.Escape) && (SceneManager.GetActiveScene().name != "TitleScreen" || SceneManager.GetActiveScene().name != "EndScene"))
+        if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().name == "CafeScene" && _IntroDone)
         {
             if (!_GamePause)
             {
@@ -92,7 +96,7 @@ public class GameManager : MonoBehaviour
     //change the scene, DM me because even I dont want to deal with explaining at midnight
     public void SCENECHANGE()
     {
-        if(SceneManager.GetActiveScene().name == "CafeScene" && (TDManager._TDConvoNo >= 3 || CelManager._CelConvoNo >= 3 || LuluManager._LuluConvoNo >= 3))
+        if(SceneManager.GetActiveScene().name == "DatingScene" && (TDManager._TDConvoNo >= 3 || CelManager._CelConvoNo >= 3 || LuluManager._LuluConvoNo >= 3))
         {
             _phase = 3; //endgame, will put the ending decider
             if (_CRelationshipMeter >= 4 && _gMChar[0]._IsEvil)
@@ -138,7 +142,10 @@ public class GameManager : MonoBehaviour
             _LASTPOS = PlayerControl.i_PC.transform.position;
             SceneManager.LoadScene("DatingScene");
         }
-        else {
+        else
+        {
+            _GamePause = false;
+            Time.timeScale = 1.0f;
             SceneManager.LoadScene("CafeScene");
         }
     }

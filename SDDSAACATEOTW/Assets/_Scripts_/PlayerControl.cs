@@ -27,11 +27,8 @@ public class PlayerControl : MonoBehaviour
     void Start()
     {
         _rb = gameObject.GetComponent<Rigidbody2D>();
-        if (GameManager._gameHasBegin)
-        {
-            i_PC.transform.position = GameManager._LASTPOS;
-        }
         _Warning.SetActive(false);
+        gameObject.transform.position = GameManager._LASTPOS;
     }
 
     // Update is called once per frame
@@ -52,8 +49,6 @@ public class PlayerControl : MonoBehaviour
         _Warning.SetActive(true);
         _CanMove = false;
         yield return new WaitForSeconds(2f);
-        _CanMove = true;
-        _Warning.SetActive(false);
     }
 
     void FixedUpdate()
@@ -70,49 +65,49 @@ public class PlayerControl : MonoBehaviour
             
             if (other.name == "Cel") //check Cel
             {
-                //if (CelManager._CelConvoNo >= 1 && GameManager._phase == 1) //Check if done phase 1
-                //{
-                //    warningTime();
-                //    Debug.Log(CelManager._CelConvoNo);
-                //}
-                //else
-                //{
+                if (CelManager._CelConvoNo >= 1 && GameManager._phase == 1) //Check if done phase 1
+                {
+                    warningTime();
+                    Debug.Log(CelManager._CelConvoNo);
+                }
+                else
+                {
                     GameManager._currentChar = other.GetComponent<CelManager>()._CelChar;
                     GameManager._currentDialog = other.GetComponent<CelManager>()._CelDialogStarts[CelManager._CelConvoNo];
                     CelManager._CelConvoNo++;
                     GameManager.i_GM.SCENECHANGE();
-                //}
-                    
+                }
+
             }
             else if (other.name == "Lulu") //Check Lulu
             {
-                //if (LuluManager._LuluConvoNo >= 1 && GameManager._phase == 1) // check if done phase 1
-                //{
-                    
-                //    warningTime();
-                //}
-                //else
-                //{
+                if (LuluManager._LuluConvoNo >= 1 && GameManager._phase == 1) // check if done phase 1
+                {
+
+                    warningTime();
+                }
+                else
+                {
                     GameManager._currentChar = other.GetComponent<LuluManager>()._LuluChar;
                     GameManager._currentDialog = other.GetComponent<LuluManager>()._LuluDialogStarts[LuluManager._LuluConvoNo];
                     LuluManager._LuluConvoNo++;
                     GameManager.i_GM.SCENECHANGE();
-                //}
-                    
+                }
+
             }
             else if (other.name == "Aevum") //Check Aevum
             {
-                //if (TDManager._TDConvoNo >= 1 && GameManager._phase == 1) // check if done phase 1
-                //{
-                //    warningTime();
-                //}
-                //else
-                //{
+                if (TDManager._TDConvoNo >= 1 && GameManager._phase == 1) // check if done phase 1
+                {
+                    warningTime();
+                }
+                else
+                {
                     GameManager._currentChar = other.GetComponent<TDManager>()._TDChar;
                     GameManager._currentDialog = other.GetComponent<TDManager>()._TDDialogStarts[TDManager._TDConvoNo];
                     TDManager._TDConvoNo++;
                     GameManager.i_GM.SCENECHANGE();
-                //}
+                }
             }
             
         }
