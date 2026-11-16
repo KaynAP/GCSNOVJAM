@@ -18,5 +18,5 @@ MonoBehaviour:
   _NpcSprite: 0
   _option1TXT: Tea
   _option2TXT: Coffee
-  _option1: {fileID: 11400000, guid: d29b39e7d1844f74bb50795bdf311aa2, type: 2}
-  _option2: {fileID: 11400000, guid: ef1d5175138857341a7e4b88eb72d513, type: 2}
+  _option1: {fileID: 11400000, guid: add4c78b9f0422140a4bc274fa227430, type: 2}
+  _option2: {fileID: 11400000, guid: b8e8aeed604cf114fa4c5e5242ed392c, type: 2}

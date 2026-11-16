@@ -44,13 +44,16 @@ public class GameManager : MonoBehaviour
         i_GM = this;
         DontDestroyOnLoad(gameObject);
     }
+
     void Start()
     {
         //select the evil guy
-        
-        _gMChar[Random.Range(0,3)]._IsEvil = true;
+        _gMChar[Random.Range(0, 3)]._IsEvil = true;
+
+        _LASTPOS = new Vector3(2.87f, -3.16f, -2f);
         SceneManager.LoadScene("TitleScene");
-        //_PauseMenu.SetActive(false);
+        _PauseMenu.SetActive(false);
+        Debug.Log($"{_gMChar[0]._IsEvil}, {_gMChar[1]._IsEvil}, {_gMChar[2]._IsEvil}");
 
     }
 
@@ -68,24 +71,24 @@ public class GameManager : MonoBehaviour
                 _phase = 2;
             }
         }
-        //if (Input.GetKeyDown(KeyCode.Escape) && (SceneManager.GetActiveScene().name != "TitleScreen" || SceneManager.GetActiveScene().name != "EndScene"))
-        //{
-        //    if (!_GamePause)
-        //    {
-        //        _GamePause = true;
-        //        _PauseMenu.SetActive(true);
-        //        Time.timeScale = 0f;
+        if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().name == "CafeScene" && _IntroDone)
+        {
+            if (!_GamePause)
+            {
+                _GamePause = true;
+                _PauseMenu.SetActive(true);
+                Time.timeScale = 0f;
                 
-        //    }
-        //    else if (_GamePause)
-        //    {
-        //        _PauseMenu.SetActive(false);
-        //        _GamePause = false;
-        //        Time.timeScale = 1.0f;
+            }
+            else if (_GamePause)
+            {
+                _PauseMenu.SetActive(false);
+                _GamePause = false;
+                Time.timeScale = 1.0f;
                 
-        //    }
+            }
             
-        //}
+        }
        
     }
 
@@ -93,57 +96,57 @@ public class GameManager : MonoBehaviour
     //change the scene, DM me because even I dont want to deal with explaining at midnight
     public void SCENECHANGE()
     {
-        if (SceneManager.GetActiveScene().name == "CafeScene"){
+        if(SceneManager.GetActiveScene().name == "DatingScene" && (TDManager._TDConvoNo >= 3 || CelManager._CelConvoNo >= 3 || LuluManager._LuluConvoNo >= 3))
+        {
+            _phase = 3; //endgame, will put the ending decider
+            if (_CRelationshipMeter >= 4 && _gMChar[0]._IsEvil)
+            {
+                //good, C bad
+                _Success = true;
+                _badGuy = "Cel";
+            }
+            else if (_CRelationshipMeter < 4 && _gMChar[0]._IsEvil)
+            {
+                //bad, C bad
+                _Success = false;
+                _badGuy = "Cel";
+            }
+            else if (_TDRelationshipMeter >= 4 && _gMChar[1]._IsEvil)
+            {
+                //good, TD bad
+                _Success = true;
+                _badGuy = "Aevum";
+            }
+            else if (_TDRelationshipMeter < 4 && _gMChar[1]._IsEvil)
+            {
+                //bad, TD bad
+                _Success = false;
+                _badGuy = "Aevum";
+            }
+            else if (_LRelationshipMeter >= 4 && _gMChar[2]._IsEvil)
+            {
+                //good, L bad
+                _Success = true;
+                _badGuy = "Lulu";
+            }
+            else if (_LRelationshipMeter < 4 && _gMChar[2]._IsEvil)
+            {
+                //bad, L bad
+                _Success = false;
+                _badGuy = "Lulu";
+            }
+            SceneManager.LoadScene("EndScene");
+        }
+        else if (SceneManager.GetActiveScene().name == "CafeScene"){
             if (PlayerControl.i_PC.isActiveAndEnabled)
             _LASTPOS = PlayerControl.i_PC.transform.position;
             SceneManager.LoadScene("DatingScene");
         }
-        else {
-            if (SceneManager.GetActiveScene().name == "DatingScene" && (TDManager._TDConvoNo >= 4 || CelManager._CelConvoNo >= 4 || LuluManager._LuluConvoNo >= 4))
-            {
-                _phase = 3; //endgame, will put the ending decider
-                if (_CRelationshipMeter >= 4 && _gMChar[0]._IsEvil)
-                {
-                    //good, C bad
-                    _Success = true;
-                    _badGuy = "Cel";
-                }
-                else if (_CRelationshipMeter < 4 && _gMChar[0]._IsEvil)
-                {
-                    //bad, C bad
-                    _Success = false;
-                    _badGuy = "Cel";
-                }
-                else if (_TDRelationshipMeter >= 4 && _gMChar[1]._IsEvil)
-                {
-                    //good, TD bad
-                    _Success = true;
-                    _badGuy = "Aevum";
-                }
-                else if (_TDRelationshipMeter < 4 && _gMChar[1]._IsEvil)
-                {
-                    //bad, TD bad
-                    _Success = false;
-                    _badGuy = "Aevum";
-                }
-                else if (_LRelationshipMeter >= 4 && _gMChar[2]._IsEvil)
-                {
-                    //good, L bad
-                    _Success = true;
-                    _badGuy = "Lulu";
-                }
-                else if (_LRelationshipMeter < 4 && _gMChar[2]._IsEvil)
-                {
-                    //bad, L bad
-                    _Success = false;
-                    _badGuy = "Lulu";
-                }
-                SceneManager.LoadScene("EndScene");
-            }
-            else
-            {
-                SceneManager.LoadScene("CafeScene");
-            }
+        else
+        {
+            _GamePause = false;
+            Time.timeScale = 1.0f;
+            SceneManager.LoadScene("CafeScene");
         }
     }
 }
