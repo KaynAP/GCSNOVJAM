@@ -19,4 +19,4 @@ MonoBehaviour:
   _option1TXT: Leave
   _option2TXT: Continue Small Talk
   _option1: {fileID: 11400000, guid: 46a3408ca997b1149bd231c906315d2a, type: 2}
-  _option2: {fileID: 0}
+  _option2: {fileID: 11400000, guid: 79376046bd00daa46888fcacfc166a7c, type: 2}

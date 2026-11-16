@@ -17,6 +17,6 @@ MonoBehaviour:
   _AddLove: 1
   _NpcSprite: 0
   _option1TXT: Ask For Order
-  _option2TXT: 
+  _option2TXT: Ask For Order
   _option1: {fileID: 11400000, guid: b2ded2b549d7fb24d8d6149b114bc069, type: 2}
-  _option2: {fileID: 0}
+  _option2: {fileID: 11400000, guid: b2ded2b549d7fb24d8d6149b114bc069, type: 2}
