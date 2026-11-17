@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     public GameObject _PauseMenu;
 
     [HideInInspector] public static string _badGuy;
+    [HideInInspector] public static string _talkingTo;
 
 
     //pull the current character and dialog scriptable objects as well as 
@@ -100,37 +101,16 @@ public class GameManager : MonoBehaviour
     //change the scene, DM me because even I dont want to deal with explaining at midnight
     public void SCENECHANGE()
     {
-        if(SceneManager.GetActiveScene().name == "DatingScene" && (TDManager._TDConvoNo >= 3 || CelManager._CelConvoNo >= 3 || LuluManager._LuluConvoNo >= 3))
+        if(SceneManager.GetActiveScene().name == "DatingScene" && (TDManager._TDConvoNo >= 4 || CelManager._CelConvoNo >= 4 || LuluManager._LuluConvoNo >= 4))
         {
             _phase = 3; //endgame, will put the ending decider
-            if (_CRelationshipMeter >= 4 && _badGuy == "Cel")
+            if ((_CRelationshipMeter >= 4 && _badGuy == "Cel") || (_TDRelationshipMeter >= 4 && _badGuy == "Aevum") || (_LRelationshipMeter >= 4 && _badGuy == "Lulu"))
             {
-                //good, C bad
+                _talkingTo = Dialog.i_DIA._Character._CharName;
                 _Success = true;
             }
-            else if (_CRelationshipMeter < 4 && _badGuy == "Cel")
+            else
             {
-                //bad, C bad
-                _Success = false;
-            }
-            else if (_TDRelationshipMeter >= 4 && _badGuy == "Aevum")
-            {
-                //good, TD bad
-                _Success = true;
-            }
-            else if (_TDRelationshipMeter < 4 && _badGuy == "Aevum")
-            {
-                //bad, TD bad
-                _Success = false;
-            }
-            else if (_LRelationshipMeter >= 4 && _badGuy == "Lulu")
-            {
-                //good, L bad
-                _Success = true;
-            }
-            else if (_LRelationshipMeter < 4 && _badGuy == "Lulu")
-            {
-                //bad, L bad
                 _Success = false;
             }
             SceneManager.LoadScene("EndScene");

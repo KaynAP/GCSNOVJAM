@@ -12,11 +12,11 @@ public class EndSequence : MonoBehaviour
     {
         if (GameManager._Success)
         {
-            if (GameManager._badGuy == "Cel")
+            if (GameManager._talkingTo == "Cel")
             {
                 _EndScreen.GetComponent<SpriteRenderer>().sprite = _ActualSprite[0];
             }
-            else if (GameManager._badGuy == "Aevum")
+            else if (GameManager._talkingTo == "Aevum")
             {
                 _EndScreen.GetComponent<SpriteRenderer>().sprite = _ActualSprite[1];
             }
