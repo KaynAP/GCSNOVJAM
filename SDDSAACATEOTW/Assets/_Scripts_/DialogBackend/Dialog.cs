@@ -37,19 +37,18 @@ public class Dialog : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {   
+    {
         //Firing audio
-
-        
+        _audioPlayer = gameObject.GetComponent<AudioSource>();
+        _audioPlayer.clip = _Character._charSound;
     }
     
     void OnEnable()
     {
         //Clear text and fire starting dialogue
-        _audioPlayer = gameObject.GetComponent<AudioSource>();
+        
         _Character = GameManager._currentChar;
         _dialogSO = GameManager._currentDialog;
-        _audioPlayer.clip = _Character._charSound;
         _BodyText.text = string.Empty;
         StartDialogue();
     }
@@ -137,33 +136,33 @@ public class Dialog : MonoBehaviour
     {
         switch(_Character._currentCharID){
             case 1: 
-                if(!_Character._IsEvil){
+                //if(!_Character._IsEvil){
                     GameManager._CRelationshipMeter += amountToAdd;
-                }
-                else
-                {
-                    GameManager._CRelationshipMeter -= amountToAdd;
-                }
+                //}
+                //else
+                //{
+                    //GameManager._CRelationshipMeter -= amountToAdd;
+                //}
             break;
 
             case 2: 
-                if(!_Character._IsEvil){
+                //if(!_Character._IsEvil){
                     GameManager._TDRelationshipMeter += amountToAdd;
-                }
-                else
-                {
-                    GameManager._TDRelationshipMeter -= amountToAdd;
-                }
+                //}
+                //else
+                //{
+                //    GameManager._TDRelationshipMeter -= amountToAdd;
+                //}
             break;
 
             case 3: 
-                if(!_Character._IsEvil){
+                //if(!_Character._IsEvil){
                     GameManager._LRelationshipMeter += amountToAdd;
-                }
-                else
-                {
-                    GameManager._LRelationshipMeter -= amountToAdd;
-                }
+                //}
+                //else
+                //{
+                //    GameManager._LRelationshipMeter -= amountToAdd;
+                //}
             break;
 
         }

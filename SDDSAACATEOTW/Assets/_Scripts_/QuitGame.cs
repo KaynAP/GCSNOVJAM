@@ -7,7 +7,7 @@ public class QuitGame : MonoBehaviour
     public void onUse()
     {
         Time.timeScale = 1.0f;
-        SceneManager.LoadScene("TitleScene");
         transform.parent.gameObject.SetActive(false);
+        SceneManager.LoadScene("TitleScene");
     }
 }

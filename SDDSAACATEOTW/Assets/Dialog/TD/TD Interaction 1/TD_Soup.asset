@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb95acdc86b437649b22dbb531e31666, type: 3}
   m_Name: TD_Soup
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
-  _EndDialog: 1
-  _dialogText: "\u201CYou better not give me anything mouldy\u2026 For someone especially such as myself, I can tell what has aged.\u201D"
+  _EndDialog: 0
+  _dialogText: '"And bring a pastry with it. Something you believe worthy of a man who has endured countless centuries. If your judgment proves adequate, I shall consider the effort appreciated."'
   _AddLove: 0
   _NpcSprite: 0
-  _option1TXT: End Dialogue
-  _option2TXT: End Dialogue
-  _option1: {fileID: 0}
-  _option2: {fileID: 0}
+  _option1TXT: Sweet Dessert
+  _option2TXT: Savoury Dessert
+  _option1: {fileID: 11400000, guid: d3a5ddb291736e544aea7fd66b685758, type: 2}
+  _option2: {fileID: 11400000, guid: 372fd33e647b54c408185c8708de346b, type: 2}
