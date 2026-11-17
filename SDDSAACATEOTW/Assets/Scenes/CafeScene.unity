@@ -1245,6 +1245,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1918557699}
+  - {fileID: 1632970598}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -16884,7 +16885,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1632970598}
   - {fileID: 2069423457}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16966,7 +16966,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1469209185}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef5c15eb5577af748b5d3d5d5d62a34d, type: 3}
+  m_Script: {fileID: 11500000, guid: 29925deb837ec434f90133008cb0081c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
 --- !u!1 &1480291364
@@ -17026,7 +17026,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I have other customers to attend to.
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -18136,15 +18136,15 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1632970597}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -3}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -3.0000687}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 926807476}
   - {fileID: 1978417508}
   - {fileID: 879478906}
-  m_Father: {fileID: 1469209186}
+  m_Father: {fileID: 339602542}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -18440,10 +18440,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05d4f4af4ff493d47bb9b822629699ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  _canvasThing: {fileID: 1632970597}
-  firstTextTarget: {fileID: 926807478}
-  secondTextTarget: {fileID: 40865890}
-  thirdTextTarget: {fileID: 777882055}
+  _minigameTab: {fileID: 1632970597}
+  _targetScript: {fileID: 321195410}
 --- !u!1 &1715403763
 GameObject:
   m_ObjectHideFlags: 0
@@ -19514,7 +19512,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2069423457
 RectTransform:
   m_ObjectHideFlags: 0

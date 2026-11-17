@@ -13,7 +13,10 @@ public class Characters : ScriptableObject
     public bool _serious;
 
     public AudioClip _charSound;
-    public bool _IsEvil = false;
+    public bool _IsEvil;
 
-
+    private void OnEnable()
+    {
+        _IsEvil = false;
+    }
 }

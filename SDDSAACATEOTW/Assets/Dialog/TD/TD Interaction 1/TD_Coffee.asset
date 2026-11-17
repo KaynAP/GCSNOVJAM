@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TD_Coffee
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 0
-  _dialogText: '"And bring a pastry with it. Something you believe worthy of a man who has endured countless centuries. If your judgment proves adequate, I shall consider the effort appreciated."'
+  _dialogText: "\u201CYou better not give me anything mouldy\u2026 For someone especially such as myself, I can tell what has aged.\u201D"
   _AddLove: 1
   _NpcSprite: 0
   _option1TXT: Soup

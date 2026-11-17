@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TD_Ask 1
   m_EditorClassIdentifier: Assembly-CSharp::DialogSO
   _EndDialog: 0
-  _dialogText: "\u201CFinally, an individual who knows to waste time on irrelevant small talk. "
+  _dialogText: "\u201CFinally, an individual who knows not to waste time on irrelevant small talk.\" "
   _AddLove: 1
   _NpcSprite: 0
   _option1TXT: Take Order

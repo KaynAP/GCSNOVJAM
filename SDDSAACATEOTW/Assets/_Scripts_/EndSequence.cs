@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using System.Collections;
 
 public class EndSequence : MonoBehaviour
 {
@@ -39,5 +40,12 @@ public class EndSequence : MonoBehaviour
                 _EndScreen.GetComponent<SpriteRenderer>().sprite = _ActualSprite[5];
             }
         }
+        StartCoroutine(pauseAtEnd());
+    }
+    IEnumerator pauseAtEnd()
+    {
+        yield return new WaitForSeconds(3f);
+        GameManager.i_GM.SCENECHANGE();
     }
 }
+

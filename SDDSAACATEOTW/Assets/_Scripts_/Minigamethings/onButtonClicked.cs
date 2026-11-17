@@ -40,7 +40,7 @@ public class onButtonClicked : MonoBehaviour
             {
                 PlayerControl._dessert = 2;
             }
-            optionsAndTitle.i_oAT.gameObject.SetActive(false);
+            transform.parent.gameObject.SetActive(false);
             PlayerControl.i_PC._CanMove = true;
         }
     }
